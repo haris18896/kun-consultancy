@@ -16,10 +16,7 @@ function HomePage(props) {
     <Fragment>
       <Head>
         <title>Kun Consultancy</title>
-        <meta
-          name='description'
-          content='Rustic - React Business Template is an excellent solution to the web designing needs for your website related to creative agency, business, portfolio, corporate, etc. '
-        />
+        <meta name='description' content='Kun Consultancy ' />
       </Head>
       <HeaderOne />
       <Hero heroItems={props.heroItems} />

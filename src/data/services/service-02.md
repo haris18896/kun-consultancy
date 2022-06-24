@@ -1,6 +1,6 @@
 ---
-title: "Commercial"
-icon: "AiOutlineShoppingCart"
+title: "STUDY ABROAD"
+icon: "FaUserGraduate"
 ---
 
-We provide all materials, labor, equip ensure a safe and secure
+Get an International Degree from World's top universities

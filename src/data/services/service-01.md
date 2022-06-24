@@ -1,6 +1,6 @@
 ---
-title: "Residential"
+title: "Accommodation"
 icon: "AiOutlineHome"
 ---
 
-We provide all materials, labor, equip ensure a safe and secure
+Best hotel accommodation for family as well as bachelors

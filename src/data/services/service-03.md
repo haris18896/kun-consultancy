@@ -1,6 +1,6 @@
 ---
-title: 'Suitanable Space'
-icon: 'AiOutlineReload'
+title: 'IMMIGRATION'
+icon: 'TiPlaneOutline'
 ---
 
-We provide all materials, labor, equip ensure a safe and secure
+Get settled in abroad with your family through immigration
