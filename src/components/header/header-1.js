@@ -99,7 +99,8 @@ function HeaderOne() {
               <div className='logo'>
                 <Link href='/'>
                   <a>
-                    <Image src='/images/logo/logo-2.png' alt='Logo' width={70} height={70} />
+                    {/* <Image src='/images/logo/logo-2.png' alt='Logo' width={70} height={70} /> */}
+                    <span>KunConsultancy_logo</span>
                   </a>
                 </Link>
               </div>
