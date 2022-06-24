@@ -34,7 +34,7 @@ function HeaderOne() {
             <div className='grid grid-cols-12 items-center leading-[120px]'>
               <div className='lg:col-span-2 col-span-6'>
                 {/* <WhiteLogo /> */}
-                <span style={{ color: '#fff' }}>KunConsultancy logo</span>
+                <span style={{ color: '#fff' }}>KunConsultancy_logo</span>
               </div>
               <div className='lg:col-span-7 lg:block hidden'>
                 <nav>
@@ -53,13 +53,13 @@ function HeaderOne() {
                         </a>
                       </Link>
                     </li>
-                    <li className={router.pathname == '/projects' ? 'active' : ''}>
+                    {/* <li className={router.pathname == '/projects' ? 'active' : ''}>
                       <Link href='/projects'>
                         <a>
                           <span>Services</span>
                         </a>
                       </Link>
-                    </li>
+                    </li> */}
                     {/* <li className={router.pathname == '/posts' ? 'active' : ''}>
                       <Link href='/posts'>
                         <a>

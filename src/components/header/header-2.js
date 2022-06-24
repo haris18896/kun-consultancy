@@ -34,7 +34,7 @@ function HeaderTwo() {
           <div className='grid grid-cols-12 items-center leading-[120px]'>
             <div className='lg:col-span-2 col-span-6'>
               {/* <DarkLogo /> */}
-              <span>KunConsultancy logo</span>
+              <span>KunConsultancy_logo</span>
             </div>
             <div className='lg:col-span-7 lg:block hidden'>
               <nav>
@@ -53,13 +53,13 @@ function HeaderTwo() {
                       </a>
                     </Link>
                   </li>
-                  <li className={router.pathname == '/projects' ? 'active' : ''}>
+                  {/* <li className={router.pathname == '/projects' ? 'active' : ''}>
                     <Link href='/projects'>
                       <a>
                         <span>Services</span>
                       </a>
                     </Link>
-                  </li>
+                  </li> */}
                   {/* <li className={router.pathname == '/posts' ? 'active' : ''}>
                     <Link href='/posts'>
                       <a>
@@ -98,7 +98,8 @@ function HeaderTwo() {
               <div className='logo'>
                 <Link href='/'>
                   <a>
-                    <Image src='/images/logo/logo-2.png' alt='Logo' width={70} height={70} />
+                    {/* <Image src='/images/logo/logo-2.png' alt='Logo' width={70} height={70} /> */}
+                    <span>KunConsultancy_logo</span>
                   </a>
                 </Link>
               </div>

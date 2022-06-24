@@ -11,7 +11,7 @@ function Footer() {
             <div className='max-lg:col-span-12'>
               <div className='footer-logo lg:text-left lm:text-center'>
                 {/* <Image src='/images/logo/footer-logo.png' alt='Logo' width={70} height={70} /> */}
-                <span>KunConsultancy logo</span>
+                <span>KunConsultancy_logo</span>
               </div>
             </div>
             <div className='fixed-lg:col-span-4 fixed-md:col-span-4 fixed-lm:col-span-6 max-sm:pt-[35px]'>
