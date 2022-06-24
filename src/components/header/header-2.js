@@ -55,17 +55,17 @@ function HeaderTwo() {
                   <li className={router.pathname == '/projects' ? 'active' : ''}>
                     <Link href='/projects'>
                       <a>
-                        <span>Projects</span>
+                        <span>Services</span>
                       </a>
                     </Link>
                   </li>
-                  <li className={router.pathname == '/posts' ? 'active' : ''}>
+                  {/* <li className={router.pathname == '/posts' ? 'active' : ''}>
                     <Link href='/posts'>
                       <a>
                         <span>Posts</span>
                       </a>
                     </Link>
-                  </li>
+                  </li> */}
                   <li className={router.pathname == '/contact' ? 'active' : ''}>
                     <Link href='/contact'>
                       <a>

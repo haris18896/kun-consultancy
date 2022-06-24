@@ -5,7 +5,10 @@ import * as TiIcons from 'react-icons/ti'
 import * as FaIcons from 'react-icons/fa'
 function Services({ services }) {
   return (
-    <div className='service-area md:pt-160 pt-[60px] relative before:bg-pattern-1 before:absolute before:h-[336px] before:w-[336px] before:top-[170px] before:left-[-168px]'>
+    <div
+      id='services'
+      className='service-area md:pt-160 pt-[60px] relative before:bg-pattern-1 before:absolute before:h-[336px] before:w-[336px] before:top-[170px] before:left-[-168px]'
+    >
       <div className='container max-w-full lg:pl-[70px] lg:pr-0'>
         <div className='lg:grid lg:grid-cols-12 flex flex-col-reverse'>
           <div className='lg:col-span-6 xl:mr-[140px] lg:mr-[40px] max-md:pt-[50px]'>

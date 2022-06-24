@@ -7,9 +7,9 @@ import Services from '../components/home-page/services'
 import About from '../components/home-page/about'
 import PricingTab from '../components/home-page/pricing-tab'
 import Testimonial from '../components/home-page/testimonial'
-import Brand from '../components/home-page/brand'
-import FeaturedPost from '../components/home-page/featured-post'
-import LatestProject from '../components/home-page/latest-project'
+// import Brand from '../components/home-page/brand'
+// import FeaturedPost from '../components/home-page/featured-post'
+// import LatestProject from '../components/home-page/latest-project'
 
 function HomePage(props) {
   return (
@@ -21,12 +21,12 @@ function HomePage(props) {
       <HeaderOne />
       <Hero heroItems={props.heroItems} />
       <Services services={props.services} />
-      <LatestProject projects={props.projects} />
+      {/* <LatestProject projects={props.projects} /> */}
       <About />
       <PricingTab pricingItems={props.pricingItems} />
       <Testimonial testimonialItems={props.testimonialItems} />
-      <Brand brandItems={props.brandItems} />
-      <FeaturedPost posts={props.posts} />
+      {/* <Brand brandItems={props.brandItems} /> */}
+      {/* <FeaturedPost posts={props.posts} /> */}
     </Fragment>
   )
 }
@@ -34,23 +34,23 @@ function HomePage(props) {
 export function getStaticProps() {
   const heroItems = getAllItems('heros')
   const posts = getAllItems('posts')
-  const projects = getAllItems('projects')
+  // const projects = getAllItems('projects')
   const services = getAllItems('services')
   const pricingItems = getAllItems('pricing')
   const testimonialItems = getAllItems('testimonial')
-  const brandItems = getAllItems('brands')
-  const LatestProject = getFeaturedItems(projects)
-  const FeaturedPost = getFeaturedItems(posts)
+  // const brandItems = getAllItems('brands')
+  // const LatestProject = getFeaturedItems(projects)
+  // const FeaturedPost = getFeaturedItems(posts)
 
   return {
     props: {
       heroItems,
-      projects: LatestProject,
-      posts: FeaturedPost,
+      // projects: LatestProject,
+      // posts: FeaturedPost,
       services,
       pricingItems,
-      testimonialItems,
-      brandItems
+      testimonialItems
+      // brandItems
     }
   }
 }

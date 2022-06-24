@@ -40,6 +40,10 @@
   border-left-color: #FFBB00;
 }
 
+.swiper-wrapper{
+    margin-bottom: 50px !important;
+}
+
 .custom-container {
     @apply xl:max-w-full xl:px-[70px] px-[15px];
 }
