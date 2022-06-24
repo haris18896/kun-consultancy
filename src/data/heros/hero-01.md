@@ -1,6 +1,6 @@
 ---
 title: Home
-image: /images/hero/1.jpg
+image: /images/pics/5.png
 heroYear: 2022
 twitterIcon: 'FaTwitter'
 facebookIcon: 'FaFacebookF'
