@@ -33,7 +33,8 @@ function HeaderTwo() {
         <div className='custom-container container'>
           <div className='grid grid-cols-12 items-center leading-[120px]'>
             <div className='lg:col-span-2 col-span-6'>
-              <DarkLogo />
+              {/* <DarkLogo /> */}
+              <span>KunConsultancy logo</span>
             </div>
             <div className='lg:col-span-7 lg:block hidden'>
               <nav>
