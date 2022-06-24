@@ -68,9 +68,9 @@ function Footer() {
                   <li>
                     <Link href='/contact'>Help</Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href='/'>Services</Link>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
@@ -81,18 +81,10 @@ function Footer() {
         <div className='custom-container'>
           <div className='inner-container border-[#dfdfdf] border-t md:mt-[95px] mt-[50px] py-9'>
             <div className='md:grid md:grid-cols-12 flex flex-col'>
-              <div className='md:col-span-4 max-lm:order-last max-lm:pt-[10px]'>
+              <div className='md:col-span-6 max-lm:order-last max-lm:pt-[10px]'>
                 <div className='copyright flex-wrap md:justify-start justify-center md:mb-0 mb-[10px]'>
-                  © 2022 <span className='mx-1'>RUSTIC</span>
+                  © 2022 <span className='mx-1'>KunConsultancy</span>
                   Made with © by
-                  <div className='text-[#f53400] mx-1'>
-                    <AiIcons.AiFillHeart />
-                  </div>
-                  <Link href='https://themeforest.net/user/codecarnival/portfolio'>
-                    <a target='_blank'>
-                      <span> CodeCarnival</span>
-                    </a>
-                  </Link>
                 </div>
               </div>
               <div className='md:col-span-6'>
@@ -120,20 +112,6 @@ function Footer() {
                   <li>
                     <Link href='https://pinterest.com/'>
                       <a>Pinterest</a>
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div className='md:col-span-2'>
-                <ul className='footer-language flex md:justify-end justify-center'>
-                  <li className='mr-8'>
-                    <Link href='/about'>
-                      <a className='text-[#30373E] text-[14px] leading-6 uppercase transition-all hover:text-[#263a4f]'>Eng</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href='/about'>
-                      <a className='text-[#30373E] text-[14px] leading-6 uppercase transition-all hover:text-[#263a4f]'>Fre</a>
                     </Link>
                   </li>
                 </ul>
