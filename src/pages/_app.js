@@ -11,8 +11,7 @@ import { ScrollToTop } from '../components/scroll'
 NProgress.configure({ showSpinner: false })
 
 function MyApp({ Component, pageProps }) {
-    
-    Router.events.on('routeChangeStart', url => {
+  Router.events.on('routeChangeStart', url => {
     NProgress.start(url)
   })
   Router.events.on('routeChangeComplete', url => {
@@ -23,7 +22,7 @@ function MyApp({ Component, pageProps }) {
     <Layout>
       <Head>
         <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <link rel='shortcut icon' href='../favicon.png' />
+        <link rel='shortcut icon' href='../../public/favicon.png' />
       </Head>
       <Component {...pageProps} />
       <ScrollToTop />
