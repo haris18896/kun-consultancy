@@ -10,8 +10,7 @@ function Footer() {
           <div className='lm:grid xl:grid-cols-4 lm:grid-cols-12 xl:gap-x-[30px] gap-[30px]'>
             <div className='max-lg:col-span-12'>
               <div className='footer-logo lg:text-left lm:text-center'>
-                {/* <Image src='/images/logo/footer-logo.png' alt='Logo' width={70} height={70} /> */}
-                <span>KunConsultancy_logo</span>
+                <Image src='/images/logo/logos/Color_70.png' alt='Logo' width={70} height={70} />
               </div>
             </div>
             <div className='fixed-lg:col-span-4 fixed-md:col-span-4 fixed-lm:col-span-6 max-sm:pt-[35px]'>
@@ -68,9 +67,9 @@ function Footer() {
                   <li>
                     <Link href='/contact'>Help</Link>
                   </li>
-                  {/* <li>
-                    <Link href='/'>Services</Link>
-                  </li> */}
+                  <li>
+                    <Link href='/projects'>Services</Link>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -84,7 +83,6 @@ function Footer() {
               <div className='md:col-span-6 max-lm:order-last max-lm:pt-[10px]'>
                 <div className='copyright flex-wrap md:justify-start justify-center md:mb-0 mb-[10px]'>
                   © 2022 <span className='mx-1'>KunConsultancy</span>
-                  Made with © by
                 </div>
               </div>
               <div className='md:col-span-6'>

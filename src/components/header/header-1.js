@@ -5,7 +5,7 @@ import { AiOutlineClose } from 'react-icons/ai'
 import { useState, useEffect, Fragment } from 'react'
 import { useRouter } from 'next/router'
 import { OffcanvasData } from './offcanvas-data'
-import WhiteLogo from './white-logo'
+import Logo from './logo'
 
 function HeaderOne() {
   const [offcanvas, setOffcanvas] = useState(false)
@@ -33,8 +33,7 @@ function HeaderOne() {
           <div className='custom-container container'>
             <div className='grid grid-cols-12 items-center leading-[120px]'>
               <div className='lg:col-span-2 col-span-6'>
-                {/* <WhiteLogo /> */}
-                <span style={{ color: '#fff' }}>KunConsultancy_logo</span>
+                <Logo />
               </div>
               <div className='lg:col-span-7 lg:block hidden'>
                 <nav>
@@ -53,20 +52,14 @@ function HeaderOne() {
                         </a>
                       </Link>
                     </li>
-                    {/* <li className={router.pathname == '/projects' ? 'active' : ''}>
+                    <li className={router.pathname == '/projects' ? 'active' : ''}>
                       <Link href='/projects'>
                         <a>
                           <span>Services</span>
                         </a>
                       </Link>
-                    </li> */}
-                    {/* <li className={router.pathname == '/posts' ? 'active' : ''}>
-                      <Link href='/posts'>
-                        <a>
-                          <span>Posts</span>
-                        </a>
-                      </Link>
-                    </li> */}
+                    </li>
+
                     <li className={router.pathname == '/contact' ? 'active' : ''}>
                       <Link href='/contact'>
                         <a>
@@ -97,12 +90,7 @@ function HeaderOne() {
           <ul className='offcanvas-menu-items' onClick={showOffcanvas}>
             <li className='navbar-toggle flex justify-between items-center pb-[15px]'>
               <div className='logo'>
-                <Link href='/'>
-                  <a>
-                    {/* <Image src='/images/logo/logo-2.png' alt='Logo' width={70} height={70} /> */}
-                    <span>KunConsultancy_logo</span>
-                  </a>
-                </Link>
+                <Logo />
               </div>
               <button className='menu-bars text-[24px] opacity-80 hover:opacity-50 transition-all' aria-label='Right Align'>
                 <AiOutlineClose />
