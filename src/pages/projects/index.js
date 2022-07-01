@@ -13,19 +13,13 @@ function allItemsPage(props) {
         <meta name='description' content='Kun Consultancy' />
       </Head>
       <HeaderTwo />
-      <Breadcrumb activePage={'Projects'} pageTitle={'Our Projects'} />
-      <AllProjects projects={props.projects} />
     </Fragment>
   )
 }
 
 export function getStaticProps() {
-  const allItems = getAllItems('projects')
-
   return {
-    props: {
-      projects: allItems
-    }
+    props: {}
   }
 }
 
