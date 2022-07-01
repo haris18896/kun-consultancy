@@ -1,4 +1,4 @@
 ---
-title: Brand Image
-clientimage: /images/clients/4.png
+title: Spark
+clientimage: /images/clients/spark.jpg
 ---

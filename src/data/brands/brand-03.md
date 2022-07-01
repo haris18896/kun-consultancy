@@ -1,4 +1,4 @@
 ---
-title: Brand Image
-clientimage: /images/clients/3.png
+title: Trichter
+clientimage: /images/clients/Trichter.jpeg
 ---

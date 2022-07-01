@@ -1,4 +1,4 @@
 ---
-title: Brand Image
-clientimage: /images/clients/2.png
+title: Qairos
+clientimage: /images/clients/Qairos.jpg
 ---

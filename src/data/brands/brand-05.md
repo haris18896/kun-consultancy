@@ -1,4 +1,4 @@
 ---
-title: Brand Image
-clientimage: /images/clients/5.png
+title: fit-outfit
+clientimage: /images/clients/fitoutfit.png
 ---

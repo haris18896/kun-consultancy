@@ -1,7 +1,8 @@
+import { useState } from 'react'
 import Image from 'next/image'
-import Link from 'next/link'
 
 function About() {
+  const [more, setMore] = useState(false)
   const subTitle = `text-[18px] leading-[32px] text-secondary uppercase`
   const title = `lm:text-[42px] lm:leading-[50px] text-[32px] text-black mb-[35px] lg:max-w-[460px]`
   const desc = `text-[14px] leading-[25px] text-secondary mb-[80px] lg:max-w-[490px]`
@@ -24,9 +25,21 @@ function About() {
               students quenching their thirst for knowledge all across the world is the assurance of our deliverance and
               commitment
             </p>
-            <Link href='/about'>
-              <a className='boxed-btn text-[18px] leading-[30px]'>More About Us</a>
-            </Link>
+
+            {more && (
+              <p className={desc}>
+                We started its operations for public in Haripur,Pakistan following the concept of navigating COV-EXIT. The concept
+                of COV-EXIT is launched by HIS HIGHNESS SHEIKH MUHAMMAD BIN RASHID AL MAKTOUM, VICE PRESIDENT OF UAE AND THE RULER
+                OF DUBAI to re-shape the economy and stabilize the damage caused by the pandemic. <br />
+                <br />
+                We are a one stop solution for all kinds of Business license and consultation. the motive of KunConsultancy is to
+                provide assistance to all their customers to overcome the current situation caused by the pandemic while also
+                saving precious time and money.
+              </p>
+            )}
+            <button onClick={() => setMore(!more)} className='boxed-btn text-[18px] leading-[30px]'>
+              {!more ? 'More About Us' : 'Less About Us'}
+            </button>
           </div>
           <div className={aboutImage}>
             <Image

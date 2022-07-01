@@ -5,7 +5,7 @@ import Services from '../components/home-page/services'
 import About from '../components/home-page/about'
 import Testimonial from '../components/home-page/testimonial'
 import { getAllItems } from '../lib/items-util'
-// import Brand from '../components/home-page/brand';
+import Brand from '../components/home-page/brand'
 import PageBanner from '../components/page-banner/index'
 // import Team from '../components/team'
 
@@ -20,7 +20,7 @@ function AboutPage(props) {
       <About />
       <Services services={props.services} />
       <Testimonial testimonialItems={props.testimonialItems} />
-      {/* <Brand brandItems={props.brandItems} /> */}
+      <Brand brandItems={props.brandItems} />
       {/* <Team teamItems={props.teamItems} /> */}
     </Fragment>
   )
@@ -29,14 +29,14 @@ function AboutPage(props) {
 export function getStaticProps() {
   const services = getAllItems('services')
   const testimonialItems = getAllItems('testimonial')
-  // const brandItems = getAllItems('brands');
+  const brandItems = getAllItems('brands')
   // const teamItems = getAllItems('teams')
 
   return {
     props: {
       services,
-      testimonialItems
-      // brandItems,
+      testimonialItems,
+      brandItems
       // teamItems
     }
   }
