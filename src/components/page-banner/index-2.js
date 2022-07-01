@@ -11,9 +11,11 @@ function PageBannerTwo() {
           <div className='col-span-10'>
             <div className='banner-content relative'>
               <span className='text-[18px] leading-[29px] text-white uppercase max-w-[225px] block mb-[310px]'>
-                Nordic interior studio
+                Kun Consultancy
               </span>
-              <h2 className='text-[100px] leading-[110px] text-white max-w-[680px]'>Copper Brass & Rustic</h2>
+              <h2 className='text-[100px] leading-[110px] text-white max-w-[680px]'>
+                PAKISTAN MOST TRUSTED IMMIGRATION CONSULTANCY
+              </h2>
             </div>
           </div>
         </div>

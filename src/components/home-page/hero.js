@@ -23,7 +23,7 @@ function Hero({ heroItems }) {
       loop={true}
     >
       {heroItems?.map((heroItem, i) => {
-        const TwitterIcon = FaIcons[heroItem?.twitterIcon]
+        const LinkedinIcon = FaIcons[heroItem?.linkedin]
         const FacebookIcon = FaIcons[heroItem?.facebookIcon]
         const GoogleIcon = FaIcons[heroItem?.googleIcon]
         return (
@@ -39,9 +39,9 @@ function Hero({ heroItems }) {
                       <span>{heroItem?.heroYear}</span>
                       <ul className='social-box mb-[-140px]'>
                         <li className='mb-[25px]'>
-                          <Link href='https://example.com/'>
-                            <a target='_blank' aria-label='Twitter'>
-                              <TwitterIcon />
+                          <Link href='https://www.linkedin.com/in/kun-consultancy-2061b5244/'>
+                            <a target='_blank' aria-label='linkedin'>
+                              <LinkedinIcon />
                             </a>
                           </Link>
                         </li>

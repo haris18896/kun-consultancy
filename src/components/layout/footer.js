@@ -20,12 +20,12 @@ function Footer() {
                   <li>Haripur, Hazara, Pakistan</li>
                   <li>
                     <Link href='mailto:hello@Rusticstudio.co'>
-                      <a className='hover:text-black transition-all'>kun@consultancy.com</a>
+                      <a className='hover:text-black transition-all'>kunconsultancy2022@gmail.com</a>
                     </Link>
                   </li>
                   <li>
                     <Link href='tel:+0084-912-3548-073'>
-                      <a className='hover:text-black transition-all'>(+92) 345 9100704</a>
+                      <a className='hover:text-black transition-all'>(+97) 152 307 3109</a>
                     </Link>
                   </li>
                 </ul>
@@ -55,7 +55,7 @@ function Footer() {
               <div className='footer-widget-item'>
                 <h2 className='title'>Help Center</h2>
                 <ul className='footer-list mt-[25px]'>
-                  <li>
+                  {/* <li>
                     <Link href='#'>FAQs</Link>
                   </li>
                   <li>
@@ -63,7 +63,7 @@ function Footer() {
                   </li>
                   <li>
                     <Link href='#'>Privacy Policy</Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link href='/contact'>Help</Link>
                   </li>

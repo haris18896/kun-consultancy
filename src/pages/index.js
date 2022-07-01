@@ -23,7 +23,7 @@ function HomePage(props) {
       <Services services={props.services} />
       {/* <LatestProject projects={props.projects} /> */}
       <About />
-      <PricingTab pricingItems={props.pricingItems} />
+      {/* <PricingTab pricingItems={props.pricingItems} /> */}
       <Testimonial testimonialItems={props.testimonialItems} />
       {/* <Brand brandItems={props.brandItems} /> */}
       {/* <FeaturedPost posts={props.posts} /> */}
@@ -36,7 +36,7 @@ export function getStaticProps() {
   const posts = getAllItems('posts')
   // const projects = getAllItems('projects')
   const services = getAllItems('services')
-  const pricingItems = getAllItems('pricing')
+  // const pricingItems = getAllItems('pricing')
   const testimonialItems = getAllItems('testimonial')
   // const brandItems = getAllItems('brands')
   // const LatestProject = getFeaturedItems(projects)
@@ -48,7 +48,7 @@ export function getStaticProps() {
       // projects: LatestProject,
       // posts: FeaturedPost,
       services,
-      pricingItems,
+      // pricingItems,
       testimonialItems
       // brandItems
     }

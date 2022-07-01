@@ -2,7 +2,7 @@
 title: Home
 image: /images/pics/14.jpg
 heroYear: 2022
-twitterIcon: 'FaTwitter'
+linkedin: 'FaLinkedinIn'
 facebookIcon: 'FaFacebookF'
 googleIcon: 'FaGoogle'
 heroCategory: Kun <br /> Consultancy

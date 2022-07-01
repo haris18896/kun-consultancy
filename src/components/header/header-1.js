@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import { FaBars } from 'react-icons/fa'
 import { AiOutlineClose } from 'react-icons/ai'
 import { useState, useEffect, Fragment } from 'react'
