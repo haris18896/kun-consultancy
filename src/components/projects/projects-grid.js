@@ -1,16 +1,16 @@
-import { Fragment } from 'react';
-import ProjectItem from './project-item';
+import { Fragment } from 'react'
+import ProjectItem from './project-item'
 
 function ProjectsGrid(props) {
-    const { projects } = props;
+  const { services } = props
 
-    return (
-        <Fragment>
-            {projects.map((project) => (
-                <ProjectItem key={project.slug} project={project} />
-            ))}
-        </Fragment>
-    );
+  return (
+    <Fragment>
+      {services.map(project => (
+        <ProjectItem key={project.slug} project={project} />
+      ))}
+    </Fragment>
+  )
 }
 
-export default ProjectsGrid;
+export default ProjectsGrid

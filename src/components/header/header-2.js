@@ -51,8 +51,8 @@ function HeaderTwo() {
                       </a>
                     </Link>
                   </li>
-                  <li className={router.pathname == '/projects' ? 'active' : ''}>
-                    <Link href='/projects'>
+                  <li className={router.pathname == '/services' ? 'active' : ''}>
+                    <Link href='/services'>
                       <a>
                         <span>Services</span>
                       </a>

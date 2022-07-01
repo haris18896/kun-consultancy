@@ -42,12 +42,6 @@ function Footer() {
                   <li>
                     <Link href='/contact'>Contact</Link>
                   </li>
-                  <li>
-                    <Link href='/about'>Career</Link>
-                  </li>
-                  <li>
-                    <Link href='/posts'>Blog</Link>
-                  </li>
                 </ul>
               </div>
             </div>
@@ -55,20 +49,11 @@ function Footer() {
               <div className='footer-widget-item'>
                 <h2 className='title'>Help Center</h2>
                 <ul className='footer-list mt-[25px]'>
-                  {/* <li>
-                    <Link href='#'>FAQs</Link>
-                  </li>
-                  <li>
-                    <Link href='#'>Terms & Conditions</Link>
-                  </li>
-                  <li>
-                    <Link href='#'>Privacy Policy</Link>
-                  </li> */}
                   <li>
                     <Link href='/contact'>Help</Link>
                   </li>
                   <li>
-                    <Link href='/projects'>Services</Link>
+                    <Link href='/services'>Services</Link>
                   </li>
                 </ul>
               </div>

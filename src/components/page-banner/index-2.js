@@ -1,23 +1,18 @@
+import Link from 'next/link'
+
 function PageBannerTwo() {
   return (
-    <div className='page-banner bg-page-banner-2 flex items-center justify-start h-[950px] bg-fixed bg-center bg-cover relative before:absolute before:bg-black before:opacity-30 before:w-full before:h-full'>
-      <div className='custom-container container pt-[90px]'>
-        <div className='grid grid-cols-12'>
-          <div className='col-span-2'>
-            <div className='year relative text-white'>
-              <span>2022</span>
-            </div>
+    <div className='page-banner bg-page-banner-2 flex items-end justify-start lg:h-[950px] h-[550px] bg-fixed bg-center bg-cover relative before:absolute before:bg-black before:opacity-40 before:w-full before:h-full'>
+      <div className='container'>
+        <div className='banner-content pb-[80px] relative'>
+          <span className='text-[18px] leading-[29px] text-white uppercase max-w-[225px] block'>Kun Consultancy</span>
+          <h2 className='sm:text-[100px] text-[30px] sm:leading-[110px] text-white max-w-[320px]'>Services</h2>
+          <div className='info text-white hover:text-primary transition-all text-[14px] pt-[15px] uppercase block lm:hidden'>
+            <Link href='tel:+contact@Rustictudio.co'>kunconsultancy2022@gmail.com</Link>
           </div>
-          <div className='col-span-10'>
-            <div className='banner-content relative'>
-              <span className='text-[18px] leading-[29px] text-white uppercase max-w-[225px] block mb-[310px]'>
-                Kun Consultancy
-              </span>
-              <h2 className='text-[100px] leading-[110px] text-white max-w-[680px]'>
-                PAKISTAN MOST TRUSTED IMMIGRATION CONSULTANCY
-              </h2>
-            </div>
-          </div>
+        </div>
+        <div className='info text-white hover:text-primary transition-all text-[14px] uppercase absolute bottom-[100px] xl:right-[70px] right-[15px] z-[2] hidden lm:block'>
+          <Link href='tel:+contact@Rustictudio.co'>kunconsultancy2022@gmail.com</Link>
         </div>
       </div>
     </div>

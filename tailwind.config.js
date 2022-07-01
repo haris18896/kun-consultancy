@@ -16,7 +16,7 @@ module.exports = {
       backgroundImage: {
         'pattern-1': "url('/images/background/pattern-1.png')",
         'page-banner-1': "url('/images/pics/7.jpg')",
-        'page-banner-2': "url('/images/pics/6.jpg')",
+        'page-banner-2': "url('/images/pics/22.jpg')",
         'new-post': "url('/images/background/new-post.jpg')"
       },
       animation: {
