@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }) {
     <Layout>
       <Head>
         <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <link rel='shortcut icon' href='../../public/favicon.png' />
+        <link rel='shortcut icon' href='/favicon.svg' />
       </Head>
       <Component {...pageProps} />
       <ScrollToTop />
