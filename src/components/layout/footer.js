@@ -36,6 +36,9 @@ function Footer() {
               <div className='footer-widget-item'>
                 <h2 className='title'>Consultancy</h2>
                 <ul className='footer-list mt-[25px]'>
+                <li>
+                    <Link href='/'>Home</Link>
+                  </li>
                   <li>
                     <Link href='/about'>About</Link>
                   </li>
