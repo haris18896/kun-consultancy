@@ -62,6 +62,7 @@ module.exports = {
     },
     screens: {
       // Maximum Medium Query
+      'max-xl': { max: '1799px' },
       'max-lg': { max: '1199px' },
       'max-md': { max: '991px' },
       'max-lm': { max: '767px' },
@@ -73,6 +74,7 @@ module.exports = {
       'fixed-lm': { min: '576px', max: '767px' },
       'fixed-md': { min: '768px', max: '991px' },
       'fixed-lg': { min: '992px', max: '1199px' },
+      'fixed-xl': { min: '1200px', max: '1800px' },
 
       // Minimum Medium Query
       sm: '480px',

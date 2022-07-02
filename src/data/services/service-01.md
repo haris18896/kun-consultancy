@@ -1,5 +1,5 @@
 ---
-title: "Testing"
+title: "Accommodation"
 icon: "AiOutlineHome"
 ---
 

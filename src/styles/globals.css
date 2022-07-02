@@ -161,7 +161,7 @@ textarea:focus-visible {
 /*  - services
 /*----------------------------------------*/
 .service-box {
-    @apply relative lg:mb-[30px] lg:last:mb-0;
+    @apply relative mb-[30px] lg:last:mb-0;
 }
 .service-box .service-box-inner {
     @apply relative py-[30px] lg:px-[50px] px-[30px] border border-[#d9d9d9] transition duration-[0.5s] before:absolute before:left-[-1px] before:top-0 before:bottom-0 before:w-[5px] before:opacity-0 before:bg-primary before:scale-x-[1] before:scale-y-[0.2] before:transition before:duration-[0.5s] hover:shadow hover:before:opacity-100 hover:before:scale-100;

@@ -18,7 +18,7 @@ function Services({ services }) {
                 Best solutions for <br /> your dream.
               </h2>
               <div className='fixed-md:grid fixed-md:grid-cols-2 grid max-md:gap-[25px]'>
-                {services?.map(service => {
+                {services.slice(0, 3)?.map(service => {
                   const Icon = AiIcons[service?.icon] || TiIcons[service?.icon] || FaIcons[service?.icon]
                   return (
                     <div className='service-box' key={service?.title}>
