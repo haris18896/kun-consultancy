@@ -1,4 +1,4 @@
 ---
-title: Qairos
-clientimage: /images/clients/Qairos.jpg
+title: Spark
+clientimage: /images/clients/spark.jpg
 ---

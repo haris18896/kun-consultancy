@@ -1,4 +1,4 @@
 ---
-title: Spark
-clientimage: /images/clients/spark.jpg
+title: Alpha
+clientimage: /images/clients/Alpha.svg
 ---

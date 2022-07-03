@@ -1,4 +1,4 @@
 ---
-title: fit-outfit
-clientimage: /images/clients/fitoutfit.png
+title: NKBVoutfit
+clientimage: /images/clients/nkbv.jpg
 ---

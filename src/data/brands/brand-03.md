@@ -1,4 +1,4 @@
 ---
-title: Trichter
-clientimage: /images/clients/Trichter.jpeg
+title: fit-outfit
+clientimage: /images/clients/fitoutfit.png
 ---
