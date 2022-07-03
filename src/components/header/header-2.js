@@ -4,7 +4,7 @@ import { AiOutlineClose } from 'react-icons/ai'
 import { useState, useEffect, Fragment } from 'react'
 import { useRouter } from 'next/router'
 import { OffcanvasData } from './offcanvas-data'
-import Logo from './logo'
+import LogoBlack from './black'
 
 function HeaderTwo() {
   const [offcanvas, setOffcanvas] = useState(false)
@@ -32,7 +32,7 @@ function HeaderTwo() {
         <div className='custom-container container'>
           <div className='grid grid-cols-12 items-center leading-[120px]'>
             <div className='lg:col-span-2 col-span-6'>
-              <Logo />
+              <LogoBlack />
             </div>
             <div className='lg:col-span-7 lg:block hidden'>
               <nav>
@@ -87,7 +87,7 @@ function HeaderTwo() {
           <ul className='offcanvas-menu-items' onClick={showOffcanvas}>
             <li className='navbar-toggle flex justify-between items-center pb-[15px]'>
               <div className='logo'>
-                <Logo />
+                <LogoBlack />
               </div>
               <button className='menu-bars text-[24px] opacity-80 hover:opacity-50 transition-all' aria-label='Right Align'>
                 <AiOutlineClose />

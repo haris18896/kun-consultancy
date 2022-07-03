@@ -10,7 +10,7 @@ function Footer() {
           <div className='lm:grid xl:grid-cols-4 lm:grid-cols-12 xl:gap-x-[30px] gap-[30px]'>
             <div className='max-lg:col-span-12'>
               <div className='footer-logo lg:text-left lm:text-center'>
-                <Image src='/images/logo/logos/Color_70.png' alt='Logo' width={70} height={70} />
+                <Image src='/images/logo/black.svg' alt='Logo' width={70} height={70} />
               </div>
             </div>
             <div className='fixed-lg:col-span-4 fixed-md:col-span-4 fixed-lm:col-span-6 max-sm:pt-[35px]'>
@@ -36,7 +36,7 @@ function Footer() {
               <div className='footer-widget-item'>
                 <h2 className='title'>Consultancy</h2>
                 <ul className='footer-list mt-[25px]'>
-                <li>
+                  <li>
                     <Link href='/'>Home</Link>
                   </li>
                   <li>
