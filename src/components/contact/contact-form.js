@@ -7,12 +7,11 @@ function ContactForm() {
       <div className='container'>
         <div className='lg:grid lg:grid-cols-5'>
           <div className='contact-info lg:col-span-2 lg:pr-[15px]'>
-            <h2 className='text-[48px] left-[58px] md:pb-[55px] pb-[35px]'>Contact</h2>
-            <h3 className='text-3xl leading-9 font-semibold'>
-              Haripur,
-              <span className='text-[#6F6969]'>Pakistan</span>
+            <h2 className='text-[48px] left-[58px] md:pb-[55px] pb-[35px] text-primary'>Contact</h2>
+            <h3 className='text-3xl leading-9 font-semibold text-primary'>
+              Haripur, <span className='text-[#fff]'>Pakistan</span>
             </h3>
-            <ul className='text-[14px] leading-[27px] text-secondary pt-6'>
+            <ul className='text-[14px] leading-[27px] text-azure pt-6'>
               <li className='pb-[15px] max-w-[270px]'>new building, office# 42, Haripur, Hazara, PK</li>
               <li className='pb-[15px]'>
                 <Link href='tel:+070-3689-56-56-56'>
@@ -37,7 +36,7 @@ function ContactForm() {
             </div> */}
           </div>
           <div className='contact-form lg:col-span-3 max-md:pt-[50px]'>
-            <h2 className='text-[18px] leading-[22px] uppercase md:mb-[75px] mb-[35px]'>Send a message for us</h2>
+            <h2 className='text-[18px] leading-[22px] text-azure uppercase md:mb-[75px] mb-[35px]'>Send a message for us</h2>
             <form>
               <div>
                 <div className='lm:flex'>

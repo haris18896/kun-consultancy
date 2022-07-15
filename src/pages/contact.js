@@ -1,8 +1,7 @@
 import Head from 'next/head'
 import { Fragment } from 'react'
-import HeaderTwo from '../components/header/header-2'
-// import GoogleMap from '../components/contact/google-map'
 import ContactForm from '../components/contact/contact-form'
+import HeaderOne from '../components/header/header-1'
 
 function ContactPage() {
   return (
@@ -11,8 +10,7 @@ function ContactPage() {
         <title>Contact Us</title>
         <meta name='description' content='Send us your messages!' />
       </Head>
-      <HeaderTwo />
-      {/* <GoogleMap /> */}
+      <HeaderOne />
       <ContactForm />
     </Fragment>
   )
