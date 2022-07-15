@@ -1,4 +1,4 @@
-import { AiOutlineRight } from 'react-icons/ai'
+import { IoLocationSharp, IoCallSharp, IoMail } from 'react-icons/io5'
 import Link from 'next/link'
 
 function ContactForm() {
@@ -12,15 +12,31 @@ function ContactForm() {
               Haripur, <span className='text-[#fff]'>Pakistan</span>
             </h3>
             <ul className='text-[14px] leading-[27px] text-azure pt-6'>
-              <li className='pb-[15px] max-w-[300px]'>new building, office# 42, Haripur, Hazara, PK</li>
-              <li className='pb-[15px]'>
-                <Link href='tel:+070-3689-56-56-56'>
-                  <a>(+92) 311 9524434</a>
+              <li className='pb-[15px] max-w-[300px] flex flex-row'>
+                <IoLocationSharp size={20} color='#ffd700' />
+                <span className='ml-[5px]'>Karachi Pakistan</span>
+              </li>
+              <li className='pb-[15px] flex flex-row'>
+                <IoCallSharp size={20} color='#ffd700' />
+
+                <Link href='tel:+923400957323'>
+                  <a className='ml-[5px]'>PAK: (+92) 340 09 57 323</a>
                 </Link>
               </li>
-              <li>
+              <li className='pb-[15px] max-w-[300px] flex flex-row'>
+                <IoLocationSharp size={20} color='#ffd700' />
+                <span className='ml-[5px]'>Dubai UAE</span>
+              </li>
+              <li className='pb-[15px] flex flex-row'>
+                <IoCallSharp size={20} color='#ffd700' />
+                <Link href='tel:+971523073109'>
+                  <a className='ml-[5px]'>UAE: (+971) 52 30 73 109</a>
+                </Link>
+              </li>
+              <li className='flex flex-row'>
+                <IoMail size={20} color='#ffd700' />
                 <Link href='mailto:contact@nordicstudio.co'>
-                  <a>kun@consultancy.com</a>
+                  <a className='ml-[5px]'>kun@consultancy.com</a>
                 </Link>
               </li>
             </ul>
@@ -41,14 +57,14 @@ function ContactForm() {
               <div>
                 <div className='lm:flex'>
                   <input
-                    className='w-full border-[#595959] border-opacity-30 border-b focus-visible:placeholder:text-black focus-visible:outline-0 focus-visible:border-black p-[15px] lm:mr-[20px]'
+                    className='w-full bg-[#c3c3c3] border-[#595959] border-opacity-30 border-b focus-visible:placeholder:text-black focus-visible:outline-0 focus-visible:border-black p-[15px] lm:mr-[20px]'
                     placeholder='Name'
                     type='text'
                     id='name'
                     required
                   />
                   <input
-                    className='w-full border-[#595959] border-opacity-30 border-b focus-visible:placeholder:text-black focus-visible:outline-0 focus-visible:border-black p-[15px]'
+                    className='w-full bg-[#c3c3c3] border-[#595959] border-opacity-30 border-b focus-visible:placeholder:text-black focus-visible:outline-0 focus-visible:border-black p-[15px]'
                     placeholder='Email'
                     type='email'
                     id='email'
@@ -58,7 +74,7 @@ function ContactForm() {
               </div>
               <div>
                 <textarea
-                  className='w-full border-[#595959] border-opacity-30 border-b focus-visible:placeholder:text-black focus-visible:outline-0 focus-visible:border-black p-[15px] mt-[35px]'
+                  className='w-full bg-[#c3c3c3] border-[#595959] border-opacity-30 border-b focus-visible:placeholder:text-black focus-visible:outline-0 focus-visible:border-black p-[15px] mt-[35px]'
                   placeholder='Here goes your message'
                   id='message'
                   rows='6'
