@@ -12,7 +12,7 @@ function ContactForm() {
               Haripur, <span className='text-[#fff]'>Pakistan</span>
             </h3>
             <ul className='text-[14px] leading-[27px] text-azure pt-6'>
-              <li className='pb-[15px] max-w-[270px]'>new building, office# 42, Haripur, Hazara, PK</li>
+              <li className='pb-[15px] max-w-[300px]'>new building, office# 42, Haripur, Hazara, PK</li>
               <li className='pb-[15px]'>
                 <Link href='tel:+070-3689-56-56-56'>
                   <a>(+92) 311 9524434</a>
@@ -41,14 +41,14 @@ function ContactForm() {
               <div>
                 <div className='lm:flex'>
                   <input
-                    className='w-full border-[#595959] border-opacity-30 border-b focus-visible:placeholder:text-black focus-visible:outline-0 focus-visible:border-black py-[15px] lm:mr-[20px]'
+                    className='w-full border-[#595959] border-opacity-30 border-b focus-visible:placeholder:text-black focus-visible:outline-0 focus-visible:border-black p-[15px] lm:mr-[20px]'
                     placeholder='Name'
                     type='text'
                     id='name'
                     required
                   />
                   <input
-                    className='w-full border-[#595959] border-opacity-30 border-b focus-visible:placeholder:text-black focus-visible:outline-0 focus-visible:border-black py-[15px]'
+                    className='w-full border-[#595959] border-opacity-30 border-b focus-visible:placeholder:text-black focus-visible:outline-0 focus-visible:border-black p-[15px]'
                     placeholder='Email'
                     type='email'
                     id='email'
@@ -58,7 +58,7 @@ function ContactForm() {
               </div>
               <div>
                 <textarea
-                  className='w-full border-[#595959] border-opacity-30 border-b focus-visible:placeholder:text-black focus-visible:outline-0 focus-visible:border-black py-[15px] mt-[35px]'
+                  className='w-full border-[#595959] border-opacity-30 border-b focus-visible:placeholder:text-black focus-visible:outline-0 focus-visible:border-black p-[15px] mt-[35px]'
                   placeholder='Here goes your message'
                   id='message'
                   rows='6'

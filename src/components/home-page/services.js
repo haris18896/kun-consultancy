@@ -14,7 +14,7 @@ function Services({ services }) {
         <div className='lg:grid lg:grid-cols-12 flex flex-col-reverse'>
           <div className='lg:col-span-6 xl:mr-[140px] lg:mr-[40px] max-md:pt-[50px]'>
             <div className='service-content xl:w-[490px] w-full ml-auto'>
-              <span className='sub-title text-[#a6852b] text-[18px] leading-[32px] uppercase mb-[25px] block'>Services</span>
+              <span className='sub-title text-[#c9ad1a] text-[18px] leading-[32px] uppercase mb-[25px] block'>Services</span>
               <h2 className='title text-primary lm:text-[42px] lm:leading-[50px] text-[32px] mb-[60px]'>
                 Best solutions for <br /> your dream.
               </h2>

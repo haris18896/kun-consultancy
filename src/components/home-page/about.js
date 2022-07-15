@@ -3,9 +3,9 @@ import Image from 'next/image'
 
 function About() {
   const [more, setMore] = useState(false)
-  const subTitle = `text-[18px] leading-[32px] text-secondary uppercase text-[#a6852b]`
+  const subTitle = `text-[18px] leading-[32px] text-secondary uppercase text-[#c9ad1a]`
   const title = `lm:text-[42px] lm:leading-[50px] text-[32px] text-primary mb-[35px] lg:max-w-[460px]`
-  const desc = `text-[14px] leading-[25px] text-[#fff] mb-[80px] lg:max-w-[490px]`
+  const desc = `text-[16px] leading-[25px] text-[#fff] mb-[80px] lg:max-w-[490px]`
   const aboutImage = `flex justify-end relative sm:before:bg-pattern-1 sm:before:absolute sm:before:h-[336px] sm:before:w-[336px] sm:before:top-[75px] sm:before:left-[85px]`
   return (
     <div id='about' className='about-area md:pt-[150px] pt-[50px]'>
@@ -14,7 +14,7 @@ function About() {
           <div className='about-content max-md:pt-10'>
             <span className={subTitle}>About</span>
             <h2 className={title}>Over 4 years leading and deeps in immigration and visit</h2>
-            <h3 className='text-azure text-2xl mb-12'>
+            <h3 className='text-[#c9ad1a] text-2xl mb-12'>
               We know that good solution means <br /> good journey
             </h3>
             <p className={desc}>
