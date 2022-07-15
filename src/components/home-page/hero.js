@@ -11,7 +11,7 @@ function Hero({ heroItems }) {
   const heroContent = `absolute sm:w-[calc(100%_-_100px)] left-auto top-1/2 transform translate-y-[-50%] z-[2]`
   return (
     <Swiper
-      className='hero-area'
+      className='hero-area '
       autoplay={{
         delay: 4000,
         disableOnInteraction: false

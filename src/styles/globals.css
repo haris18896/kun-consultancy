@@ -182,7 +182,7 @@ textarea:focus-visible {
     @apply text-[20px] leading-[26px] uppercase mb-[10px];
 }
 .service-list .content .desc {
-    @apply text-secondary text-[14px];
+    @apply text-[#fff] text-[14px];
 }
 
 /*----------------------------------------*/
@@ -280,7 +280,7 @@ textarea:focus-visible {
     @apply md:pt-[155px] pt-[55px] md:mt-[155px] mt-[55px];
 }
 .testimonial-title {
-    @apply lm:text-[42px] text-[28px] lm:leading-[50px];
+    @apply lm:text-[42px] text-primary text-[28px] lm:leading-[50px];
 }
 .testimonial-block {
     @apply bg-white relative;
@@ -305,7 +305,7 @@ textarea:focus-visible {
     @apply xl:text-[30px] text-[20px] leading-[39px];
 }
 .footer-widget-item ul li {
-    @apply text-secondary text-[14px] leading-[24px] uppercase mb-[5px] last:mb-0;
+    @apply text-[#fff] text-[14px] leading-[24px] uppercase mb-[5px] last:mb-0;
 }
 .footer-list li {
     @apply duration-300 hover:text-black hover:pl-[15px];
@@ -317,10 +317,10 @@ textarea:focus-visible {
     @apply flex items-center;
 }
 .footer-bottom .copyright {
-    @apply flex items-center text-[#30373E] text-[14px] leading-6;
+    @apply flex items-center text-[#fff] text-[14px] leading-6;
 }
 .footer-bottom .copyright span {
-    @apply text-black font-bold normal-case;
+    @apply text-primary font-bold normal-case;
 }
 .footer-social-link {
     @apply flex justify-center flex-wrap;
@@ -329,7 +329,7 @@ textarea:focus-visible {
     @apply mr-4 last:mr-0;
 }
 .footer-social-link li a {
-    @apply text-[14px] leading-6 uppercase transition-all text-[#30373E] hover:text-sky;
+    @apply text-[14px] leading-6 uppercase transition-all text-[#fff] hover:text-sky;
 }
 
 /*----------------------------------------*/

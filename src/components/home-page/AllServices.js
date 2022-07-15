@@ -12,9 +12,11 @@ function AllServices({ services }) {
   return (
     <div id='services' className='service-area md:pt-160 pt-[60px]'>
       <div className='container max-w-full lg:pl-[70px] lg:pr-0 text-center'>
-        <span className='sub-title text-secondary text-[18px] leading-[32px] uppercase mb-[25px] block'>What We Do!</span>
-        <h2 className='title text-black lm:text-[42px] lm:leading-[50px] text-[32px] mb-[60px]'>Our Services</h2>
-        <h3 className='text-secondary text-2xl mb-12'>When Our is so Passionate, success happens, we Ensure You Success.</h3>
+        <span className='sub-title text-[#fff] text-[18px] leading-[32px] uppercase mb-[25px] block'>What We Do!</span>
+        <h2 className='title text-primary lm:text-[42px] lm:leading-[50px] text-[32px] mb-[60px]'>Our Services</h2>
+        <h3 className='text-[#fff] text-2xl mb-12'>
+          It will be our immense pleasure to consult you in your vision and future goals.
+        </h3>
         <div className='text-left  flex flex-col-reverse'>
           <div className='lg:col-span-4 xl:mr-[140px] lg:mr-[40px] max-md:pt-[50px]'>
             <div className='service-content grid'>
@@ -33,12 +35,12 @@ function AllServices({ services }) {
                     <div className='service-box' key={service?.title}>
                       <div className='service-box-inner'>
                         <div className='service-list'>
-                          <div className='icon'>
+                          <div className='icon text-primary'>
                             <Icon />
                           </div>
                           <div className='content'>
-                            <h3 className='title'>{service?.title}</h3>
-                            <p className='desc'>{service?.content}</p>
+                            <h3 className='title text-primary'>{service?.title}</h3>
+                            <p className='desc '>{service?.content}</p>
                           </div>
                         </div>
                       </div>

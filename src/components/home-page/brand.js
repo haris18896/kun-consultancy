@@ -8,11 +8,11 @@ SwiperCore.use([Pagination, Autoplay])
 function Brand({ brandItems }) {
   const brandImage = `relative transition duration-500`
   return (
-    <div className='brand-area bg-azure'>
+    <div className='brand-area'>
       <div className='container'>
-        <div className='columns-1 border-[#dfdfdf] border-b md:py-[115px] py-[45px]'>
+        <div className='columns-1 md:py-[115px] py-[45px]'>
           <Swiper
-            // autoplay={{ delay: 4000, disableOnInteraction: false }}
+            autoplay={{ delay: 4000, disableOnInteraction: false }}
             pagination={false}
             spaceBetween={30}
             loop={false}

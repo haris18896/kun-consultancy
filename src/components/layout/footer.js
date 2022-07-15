@@ -4,18 +4,18 @@ import Link from 'next/link'
 
 function Footer() {
   return (
-    <footer className='footer-area md:pt-[120px] pt-[60px]'>
+    <footer className='footer-area bg-[rgb(17,17,17)] md:pt-[120px] pt-[60px]'>
       <div className='footer-top'>
         <div className='custom-container'>
           <div className='lm:grid xl:grid-cols-4 lm:grid-cols-12 xl:gap-x-[30px] gap-[30px]'>
             <div className='max-lg:col-span-12'>
               <div className='footer-logo lg:text-left lm:text-center'>
-                <Image src='/images/logo/black.svg' alt='Logo' width={70} height={70} />
+                <Image src='/images/logo/white.svg' alt='Logo' width={70} height={70} />
               </div>
             </div>
             <div className='fixed-lg:col-span-4 fixed-md:col-span-4 fixed-lm:col-span-6 max-sm:pt-[35px]'>
               <div className='footer-widget-item'>
-                <h2 className='title'>Contact</h2>
+                <h2 className='title text-primary'>Contact</h2>
                 <ul className='contact-info mt-[25px]'>
                   <li>Haripur, Hazara, Pakistan</li>
                   <li>
@@ -34,7 +34,7 @@ function Footer() {
 
             <div className='fixed-lg:col-span-4 fixed-md:col-span-4 fixed-lm:col-span-6 max-sm:pt-[30px]'>
               <div className='footer-widget-item'>
-                <h2 className='title'>Consultancy</h2>
+                <h2 className='title text-primary'>Consultancy</h2>
                 <ul className='footer-list mt-[25px]'>
                   <li>
                     <Link href='/'>Home</Link>
@@ -50,7 +50,7 @@ function Footer() {
             </div>
             <div className='fixed-lg:col-span-4 fixed-md:col-span-4 fixed-lm:col-span-6 max-sm:pt-[30px]'>
               <div className='footer-widget-item'>
-                <h2 className='title'>Help Center</h2>
+                <h2 className='title text-primary'>Help Center</h2>
                 <ul className='footer-list mt-[25px]'>
                   <li>
                     <Link href='/contact'>Help</Link>

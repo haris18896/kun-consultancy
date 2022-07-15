@@ -21,7 +21,7 @@ function Testimonial({ testimonialItems }) {
     }
   }, [swiper])
   return (
-    <div className='testimonial-area bg-azure'>
+    <div className='testimonial-area bg-[rgb(50,62,79)]'>
       <div className='container'>
         <div className='grid-cols-1'>
           <div className='flex items-center justify-between mb-[65px]'>

@@ -7,14 +7,15 @@ function Services({ services }) {
   return (
     <div
       id='services'
-      className='service-area md:pt-160 pt-[60px] relative before:bg-pattern-1 before:absolute before:h-[336px] before:w-[336px] before:top-[170px] before:left-[-168px]'
+      // style={{ backgroundColor: '#152535' }}
+      className='service-area  md:pt-160 pt-[60px] relative before:bg-pattern-1 before:absolute before:h-[336px] before:w-[336px] before:top-[170px] before:left-[-168px]'
     >
       <div className='container max-w-full lg:pl-[70px] lg:pr-0'>
         <div className='lg:grid lg:grid-cols-12 flex flex-col-reverse'>
           <div className='lg:col-span-6 xl:mr-[140px] lg:mr-[40px] max-md:pt-[50px]'>
             <div className='service-content xl:w-[490px] w-full ml-auto'>
-              <span className='sub-title text-secondary text-[18px] leading-[32px] uppercase mb-[25px] block'>Services</span>
-              <h2 className='title text-black lm:text-[42px] lm:leading-[50px] text-[32px] mb-[60px]'>
+              <span className='sub-title text-[#a6852b] text-[18px] leading-[32px] uppercase mb-[25px] block'>Services</span>
+              <h2 className='title text-primary lm:text-[42px] lm:leading-[50px] text-[32px] mb-[60px]'>
                 Best solutions for <br /> your dream.
               </h2>
               <div className='fixed-md:grid fixed-md:grid-cols-2 grid max-md:gap-[25px]'>
@@ -24,11 +25,11 @@ function Services({ services }) {
                     <div className='service-box' key={service?.title}>
                       <div className='service-box-inner'>
                         <div className='service-list'>
-                          <div className='icon'>
+                          <div className='icon text-primary'>
                             <Icon />
                           </div>
                           <div className='content'>
-                            <h3 className='title'>
+                            <h3 className='title text-primary'>
                               <Link href='/services'>
                                 <a className='hover:underline'>{service?.title}</a>
                               </Link>
