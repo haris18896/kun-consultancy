@@ -33,12 +33,15 @@ function AllServices({ services }) {
                     IoIcons[service?.icon]
                   return (
                     <div className='service-box' key={service?.title}>
-                      <div className='service-box-inner'>
-                        <div className='service-list'>
-                          <div className='icon text-primary'>
+                      <div className='service-box-inner border-none'>
+                        <div
+                          // className='flex flex-col'
+                          className='service-list flex-col text-center'
+                        >
+                          <div className='icon text-primary mb-[12px] m-auto'>
                             <Icon />
                           </div>
-                          <div className='content'>
+                          <div className='contentServices'>
                             <h3 className='title text-primary'>{service?.title}</h3>
                             <p className='desc '>{service?.content}</p>
                           </div>

@@ -164,11 +164,13 @@ textarea:focus-visible {
     @apply relative mb-[30px] lg:last:mb-0;
 }
 .service-box .service-box-inner {
-    @apply relative py-[30px] lg:px-[50px] px-[30px] border border-[#d9d9d9] transition duration-[0.5s] before:absolute before:left-[-1px] before:top-0 before:bottom-0 before:w-[5px] before:opacity-0 before:bg-primary before:scale-x-[1] before:scale-y-[0.2] before:transition before:duration-[0.5s] hover:shadow hover:before:opacity-100 hover:before:scale-100;
+    @apply relative py-[30px] lg:px-[50px] px-[30px] border border-[#d9d9d9] transition duration-[0.5s] before:absolute before:left-[-1px] before:top-0 before:bottom-0 before:w-[5px] before:opacity-0 before:bg-primary before:scale-x-[1] before:scale-y-[0.2] before:transition before:duration-[0.5s] hover:cursor-pointer hover:before:opacity-100 hover:before:scale-100;
 }
 .service-box-inner .service-list {
     @apply relative flex;
 }
+
+
 .service-list .icon {
     @apply w-[65px];
 }
@@ -178,10 +180,19 @@ textarea:focus-visible {
 .service-list > .content {
     @apply lg:pl-[45px] pl-[30px];
 }
+
 .service-list > .content .title {
     @apply text-[20px] leading-[26px] uppercase mb-[10px];
 }
 .service-list .content .desc {
+    @apply text-[#fff] text-[14px];
+}
+
+
+.service-list > .contentServices .title {
+    @apply text-[20px] leading-[26px] uppercase mb-[10px];
+}
+.service-list .contentServices .desc {
     @apply text-[#fff] text-[14px];
 }
 
