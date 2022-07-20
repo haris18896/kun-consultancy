@@ -2,7 +2,6 @@ import Head from 'next/head'
 import { Fragment } from 'react'
 import HeaderOne from '../components/header/header-1'
 import AllServices from '../components/home-page/AllServices.js'
-import Services from '../components/home-page/services'
 import PageBannerTwo from '../components/page-banner/index-2'
 import { getAllItems } from '../lib/items-util'
 

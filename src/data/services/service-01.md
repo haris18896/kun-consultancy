@@ -1,6 +1,7 @@
 ---
-title: "Accommodation"
+title: "Accommodation (UAE)"
 icon: "AiOutlineHome"
+href: "/service-details/accommodation"
 ---
 
-Best hotel accommodation for family as well as bachelors
+Best Accommodation in United Arab Emirates

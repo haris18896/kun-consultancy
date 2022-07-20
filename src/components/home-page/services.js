@@ -1,9 +1,11 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import * as AiIcons from 'react-icons/ai'
-import * as TiIcons from 'react-icons/ti'
-import * as FaIcons from 'react-icons/fa'
+import * as GiIcons from 'react-icons/gi'
+import * as GrIcons from 'react-icons/gr'
+import { useRouter } from 'next/router'
 function Services({ services }) {
+  const router = useRouter()
   return (
     <div
       id='services'
@@ -20,9 +22,17 @@ function Services({ services }) {
               </h2>
               <div className='fixed-md:grid fixed-md:grid-cols-2 grid max-md:gap-[25px]'>
                 {services.slice(0, 3)?.map(service => {
-                  const Icon = AiIcons[service?.icon] || TiIcons[service?.icon] || FaIcons[service?.icon]
+                  const Icon = AiIcons[service?.icon] || GiIcons[service?.icon] || GrIcons[service?.icon]
                   return (
-                    <div className='service-box' key={service?.title}>
+                    <div
+                      className='service-box'
+                      key={service?.title}
+                      onClick={() => {
+                        if (service?.href) {
+                          router.push(`${service?.href}`)
+                        }
+                      }}
+                    >
                       <div className='service-box-inner'>
                         <div className='service-list'>
                           <div className='icon text-primary'>

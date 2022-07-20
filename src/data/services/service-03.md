@@ -1,6 +1,7 @@
 ---
-title: 'IMMIGRATION'
-icon: 'TiPlaneOutline'
+title: 'Visa Services (UAE)'
+icon: 'GrVisa'
+href: "/service-details/visa-services"
 ---
 
-Get settled in abroad with your family through immigration
+Get a professional visa services on all domains of visas

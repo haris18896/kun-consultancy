@@ -1,6 +1,8 @@
 ---
-title: 'Business Setup'
-icon: 'FaBusinessTime'
+title: 'Freelance Visa'
+icon: 'SiFreelancer'
+href: "/service-details/freelance-visa"
 ---
 
-At Emirates Classic, we provide a wide range of business setup services in Dubai and UAE for startups,medium enterprises and large business concerns
+Get help with freelance visa processing in the United Arab Emirates, Kingdom of Saudi Arabia, and 
+Qatar

@@ -1,14 +1,16 @@
-import Link from 'next/link'
+import { useRouter } from 'next/router'
+
 import * as AiIcons from 'react-icons/ai'
-import * as TiIcons from 'react-icons/ti'
-import * as FaIcons from 'react-icons/fa'
-import * as TbIcons from 'react-icons/tb'
-import * as MdIcons from 'react-icons/md'
-import * as SiIcons from 'react-icons/si'
+import * as GiIcons from 'react-icons/gi'
+import * as GrIcons from 'react-icons/gr'
 import * as RiIcons from 'react-icons/ri'
-import * as IoIcons from 'react-icons/io5'
+import * as SiIcons from 'react-icons/si'
+import * as MdIcons from 'react-icons/md'
+import * as FaIcons from 'react-icons/fa'
+import * as VscIcons from 'react-icons/vsc'
 
 function AllServices({ services }) {
+  const router = useRouter()
   return (
     <div id='services' className='service-area md:pt-160 pt-[60px]'>
       <div className='container max-w-full lg:pl-[70px] lg:pr-0 text-center'>
@@ -24,20 +26,25 @@ function AllServices({ services }) {
                 {services?.map(service => {
                   const Icon =
                     AiIcons[service?.icon] ||
-                    TiIcons[service?.icon] ||
-                    FaIcons[service?.icon] ||
-                    TbIcons[service?.icon] ||
-                    MdIcons[service?.icon] ||
-                    SiIcons[service?.icon] ||
+                    GiIcons[service?.icon] ||
+                    GrIcons[service?.icon] ||
                     RiIcons[service?.icon] ||
-                    IoIcons[service?.icon]
+                    VscIcons[service?.icon] ||
+                    SiIcons[service?.icon] ||
+                    FaIcons[service?.icon] ||
+                    MdIcons[service?.icon]
                   return (
-                    <div className='service-box' key={service?.title}>
+                    <div
+                      className='service-box'
+                      key={service?.title}
+                      onClick={() => {
+                        if (service?.href) {
+                          router.push(`${service?.href}`)
+                        }
+                      }}
+                    >
                       <div className='service-box-inner border-none'>
-                        <div
-                          // className='flex flex-col'
-                          className='service-list flex-col text-center'
-                        >
+                        <div className='service-list flex-col text-center'>
                           <div className='icon text-primary mb-[12px] m-auto'>
                             <Icon />
                           </div>

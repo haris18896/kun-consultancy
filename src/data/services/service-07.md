@@ -1,6 +1,8 @@
 ---
-title: 'Local Sponsor'
-icon: 'SiGithubsponsors'
+title: 'Business Setup (Dubai-UAE)'
+icon: 'FaBusinessTime'
+href: "/service-details/business-setup"
 ---
 
-A general term used in the UAE to refer to local Service Agents and nominee Shareholders in Mainland Companies with Foreign Investment.
+we provide a wide range of business setup services in Dubai for start-ups, medium enterprises, and 
+large business concern

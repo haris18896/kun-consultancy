@@ -1,6 +1,8 @@
 ---
-title: 'Trade License'
-icon: 'TbLicense'
+title: 'Visa Consultancy'
+icon: 'RiVisaLine'
+href: "/service-details/visa-consultancy"
 ---
 
-A valid trade license in Dubai enables an entrepreneur to legally perform a business activity or a group of activities specified in the license.
+We will help you with visa processing in the United Arab Emirates, Kingdom of Saudi Arabia, Qatar, Canada, 
+United States of America, and Schengen Countries

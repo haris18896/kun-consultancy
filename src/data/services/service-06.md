@@ -1,6 +1,7 @@
 ---
-title: 'VAT Registration'
-icon: 'MdAppRegistration'
+title: 'Tourist Plan (UAE)'
+icon: 'MdTour'
+href: "/service-details/tourist-plan"
 ---
 
-refers to the set of procedures by which a person can register with the Federal Tax Authority (FTA).We're happy to assist You
+Discover UAE with Kun Consulting and make your journey memorable and tension-free

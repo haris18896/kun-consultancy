@@ -1,7 +1,8 @@
 ---
-title: "STUDY ABROAD"
-icon: "FaUserGraduate"
+title: "Legal Consultation (UAE)"
+icon: "GiPapers"
+href: "/service-details/legal-consultancy"
 ---
 
-Get an International Degree from World's top universities
+Get a specialist to help you with ligation
 
