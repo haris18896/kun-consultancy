@@ -28,8 +28,25 @@ function ContactForm() {
           email: email.trim(),
           message: message
         }
-
         console.log('data', data)
+
+        async data => {
+          try {
+            await fetch('/api/mail', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify(data)
+            })
+            alert('Message sent!')
+            //if success do whatever you like, i.e toast notification
+          } catch (error) {
+            // toast error message. whatever you wish
+            alert('Error sending message!')
+            console.log('error', error)
+          }
+        }
       }
     }
   })
