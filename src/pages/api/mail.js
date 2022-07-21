@@ -2,9 +2,21 @@
 import sgMail from '@sendgrid/mail'
 // import { NextApiRequest, NextApiResponse } from 'next';
 
-export default async (req, res) => {
-  const { name, email, message } = req.body
-  console.log('body', name, email, message)
+sgMail.setApiKey(process.env.EMAIL_API_KEY)
 
-  res.status(200).json({ status: 'ok' })
+export default (req, res) => {
+  const body = req.body
+
+  const message = `
+        Name: ${body.name}\r\n
+        Email: ${body.email}\r\n
+        Message: ${body.message}
+    `
+
+  const data = {
+    to: 'kunconsultancy2022@gmail.com',
+    from: body.email,
+    name: body.name,
+    text: body.message
+  }
 }

@@ -10,13 +10,15 @@ function ContactForm() {
   const MailSchema = Yup.object().shape({
     name: Yup.string().required('Name is a required field!').min(3, 'Name must be at least 3 characters!'),
     email: Yup.string().email('Please enter a valid email address').required('Email is a required field!'),
-    message: Yup.string().required('Message is a required field!').min(10, 'Message must be at least 10 characters!')
+    subject: Yup.string().required('Subject is a required field!').min(15, 'Subject must be at least 3 characters!'),
+    message: Yup.string().required('Message is a required field!').min(15, 'Message must be at least 10 characters!')
   })
 
   const formik = useFormik({
     initialValues: {
       name: '',
       email: '',
+      subject: '',
       message: ''
     },
     validationSchema: MailSchema,
@@ -26,6 +28,7 @@ function ContactForm() {
         const data = {
           name: name,
           email: email.trim(),
+          subject: subject,
           message: message
         }
         console.log('data', data)
@@ -99,7 +102,7 @@ function ContactForm() {
                     <input
                       className={classNames({
                         'w-full bg-[#c3c3c3] border-[#595959] border-opacity-70 border-b focus-visible:placeholder:text-black focus-visible:outline-0 focus-visible:border-primary p-[15px] lm:mr-[20px]': true,
-                        'border-[red] border-opacity-100 ': formik.touched.name && formik.errors.name
+                        'border-[#f20] border-opacity-100 ': formik.touched.name && formik.errors.name
                       })}
                       placeholder='Name'
                       type='text'
@@ -108,13 +111,13 @@ function ContactForm() {
                       {...formik.getFieldProps('name')}
                       required
                     />
-                    {formik.touched.name && formik.errors.name && <p className='text-[red]'>{formik.errors.name}</p>}
+                    {formik.touched.name && formik.errors.name && <p className='text-[#f20]'>{formik.errors.name}</p>}
                   </div>
                   <div className=' mr-[10px] ml-[10px]'>
                     <input
                       className={classNames({
                         'w-full bg-[#c3c3c3] border-[#595959] border-opacity-70 border-b focus-visible:placeholder:text-black focus-visible:outline-0 focus-visible:border-primary p-[15px]': true,
-                        'border-[red] border-opacity-100': formik.touched.email && formik.errors.email
+                        'border-[#f20] border-opacity-100': formik.touched.email && formik.errors.email
                       })}
                       placeholder='Email'
                       type='email'
@@ -122,7 +125,7 @@ function ContactForm() {
                       {...formik.getFieldProps('email')}
                       required
                     />
-                    {formik.touched.email && formik.errors.email && <p className='text-[red]'>{formik.errors.email}</p>}
+                    {formik.touched.email && formik.errors.email && <p className='text-[#f20]'>{formik.errors.email}</p>}
                   </div>
                 </div>
               </div>
@@ -130,7 +133,23 @@ function ContactForm() {
                 <textarea
                   className={classNames({
                     'w-full bg-[#c3c3c3] border-[#595959] border-opacity-70 border-b focus-visible:placeholder:text-black focus-visible:outline-0 focus-visible:border-primary p-[15px] mt-[35px]': true,
-                    'border-[red] border-opacity-100': formik.touched.message && formik.errors.message
+                    'border-[#f20] border-opacity-100': formik.touched.message && formik.errors.message
+                  })}
+                  placeholder='Subject'
+                  id='subject'
+                  min={15}
+                  rows={1}
+                  {...formik.getFieldProps('subject')}
+                  required
+                ></textarea>
+                {formik.touched.subject && formik.errors.subject && <p className='text-[#f20]'>{formik.errors.subject}</p>}
+              </div>
+
+              <div className=' mr-[10px] ml-[10px]'>
+                <textarea
+                  className={classNames({
+                    'w-full bg-[#c3c3c3] border-[#595959] border-opacity-70 border-b focus-visible:placeholder:text-black focus-visible:outline-0 focus-visible:border-primary p-[15px] mt-[35px]': true,
+                    'border-[#f20] border-opacity-100': formik.touched.message && formik.errors.message
                   })}
                   placeholder='Here goes your message'
                   id='message'
@@ -139,7 +158,7 @@ function ContactForm() {
                   {...formik.getFieldProps('message')}
                   required
                 ></textarea>
-                {formik.touched.message && formik.errors.message && <p className='text-[red]'>{formik.errors.message}</p>}
+                {formik.touched.message && formik.errors.message && <p className='text-[#f20]'>{formik.errors.message}</p>}
               </div>
 
               <div className='mt-[55px]'>
