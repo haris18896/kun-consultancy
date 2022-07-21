@@ -1,7 +1,39 @@
-import { IoLocationSharp, IoCallSharp, IoMail } from 'react-icons/io5'
+import * as Yup from 'yup'
 import Link from 'next/link'
+import classNames from 'classnames'
+
+import { useFormik } from 'formik'
+import { isObjEmpty } from '../../utils/utils'
+import { IoLocationSharp, IoCallSharp, IoMail } from 'react-icons/io5'
 
 function ContactForm() {
+  const MailSchema = Yup.object().shape({
+    name: Yup.string().required('Name is a required field!').min(3, 'Name must be at least 3 characters!'),
+    email: Yup.string().email('Please enter a valid email address').required('Email is a required field!'),
+    message: Yup.string().required('Message is a required field!').min(10, 'Message must be at least 10 characters!')
+  })
+
+  const formik = useFormik({
+    initialValues: {
+      name: '',
+      email: '',
+      message: ''
+    },
+    validationSchema: MailSchema,
+    onSubmit: values => {
+      if (isObjEmpty(formik.errors)) {
+        const { name, email, message } = values
+        const data = {
+          name: name,
+          email: email.trim(),
+          message: message
+        }
+
+        console.log('data', data)
+      }
+    }
+  })
+
   return (
     <div className='contact-area md:pt-[145px] pt-[45px] border-[#595959] border-opacity-30 border-b md:pb-160 pb-[60px]'>
       <div className='container'>
@@ -40,48 +72,57 @@ function ContactForm() {
                 </Link>
               </li>
             </ul>
-            {/* <div className='button-wrap pt-[95px]'>
-              <Link href='/contact'>
-                <a className='inline-flex items-center text-[14px] leading-[30px] p-[11px_32px] transition duration-[0.4s] border border-[#969696] uppercase hover:border-black hover:bg-black hover:text-white'>
-                  Map Direction
-                  <div className='ml-[5px]'>
-                    <AiOutlineRight />
-                  </div>
-                </a>
-              </Link>
-            </div> */}
           </div>
           <div className='contact-form lg:col-span-3 max-md:pt-[50px]'>
             <h2 className='text-[18px] leading-[22px] text-azure uppercase md:mb-[75px] mb-[35px]'>Send a message for us</h2>
-            <form>
+            <form method='post' onSubmit={formik.handleSubmit}>
               <div>
                 <div className='lm:flex'>
-                  <input
-                    className='w-full bg-[#c3c3c3] border-[#595959] border-opacity-30 border-b focus-visible:placeholder:text-black focus-visible:outline-0 focus-visible:border-black p-[15px] lm:mr-[20px]'
-                    placeholder='Name'
-                    type='text'
-                    id='name'
-                    min={3}
-                    required
-                  />
-                  <input
-                    className='w-full bg-[#c3c3c3] border-[#595959] border-opacity-30 border-b focus-visible:placeholder:text-black focus-visible:outline-0 focus-visible:border-black p-[15px]'
-                    placeholder='Email'
-                    type='email'
-                    id='email'
-                    required
-                  />
+                  <div className=' mr-[10px] ml-[10px]'>
+                    <input
+                      className={classNames({
+                        'w-full bg-[#c3c3c3] border-[#595959] border-opacity-70 border-b focus-visible:placeholder:text-black focus-visible:outline-0 focus-visible:border-primary p-[15px] lm:mr-[20px]': true,
+                        'border-[red] border-opacity-100 ': formik.touched.name && formik.errors.name
+                      })}
+                      placeholder='Name'
+                      type='text'
+                      id='name'
+                      min={3}
+                      {...formik.getFieldProps('name')}
+                      required
+                    />
+                    {formik.touched.name && formik.errors.name && <p className='text-[red]'>{formik.errors.name}</p>}
+                  </div>
+                  <div className=' mr-[10px] ml-[10px]'>
+                    <input
+                      className={classNames({
+                        'w-full bg-[#c3c3c3] border-[#595959] border-opacity-70 border-b focus-visible:placeholder:text-black focus-visible:outline-0 focus-visible:border-primary p-[15px]': true,
+                        'border-[red] border-opacity-100': formik.touched.email && formik.errors.email
+                      })}
+                      placeholder='Email'
+                      type='email'
+                      id='email'
+                      {...formik.getFieldProps('email')}
+                      required
+                    />
+                    {formik.touched.email && formik.errors.email && <p className='text-[red]'>{formik.errors.email}</p>}
+                  </div>
                 </div>
               </div>
-              <div>
+              <div className=' mr-[10px] ml-[10px]'>
                 <textarea
-                  className='w-full bg-[#c3c3c3] border-[#595959] border-opacity-30 border-b focus-visible:placeholder:text-black focus-visible:outline-0 focus-visible:border-black p-[15px] mt-[35px]'
+                  className={classNames({
+                    'w-full bg-[#c3c3c3] border-[#595959] border-opacity-70 border-b focus-visible:placeholder:text-black focus-visible:outline-0 focus-visible:border-primary p-[15px] mt-[35px]': true,
+                    'border-[red] border-opacity-100': formik.touched.message && formik.errors.message
+                  })}
                   placeholder='Here goes your message'
                   id='message'
                   rows='6'
                   min={15}
+                  {...formik.getFieldProps('message')}
                   required
                 ></textarea>
+                {formik.touched.message && formik.errors.message && <p className='text-[red]'>{formik.errors.message}</p>}
               </div>
 
               <div className='mt-[55px]'>
