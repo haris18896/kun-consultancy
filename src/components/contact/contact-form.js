@@ -61,6 +61,7 @@ function ContactForm() {
                     placeholder='Name'
                     type='text'
                     id='name'
+                    min={3}
                     required
                   />
                   <input
@@ -78,6 +79,7 @@ function ContactForm() {
                   placeholder='Here goes your message'
                   id='message'
                   rows='6'
+                  min={15}
                   required
                 ></textarea>
               </div>
