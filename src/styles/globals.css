@@ -319,7 +319,7 @@ textarea:focus-visible {
     @apply text-[#fff] text-[14px] leading-[24px] uppercase mb-[5px] last:mb-0;
 }
 .footer-list li {
-    @apply duration-300 hover:text-black hover:pl-[15px];
+    @apply duration-300 hover:text-primary hover:pl-[15px];
 }
 .footer-widget-item .contact-info li {
     @apply leading-[27px] mb-[15px] last:mb-0;
