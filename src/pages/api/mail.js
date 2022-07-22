@@ -5,24 +5,19 @@ import { NextApiRequest, NextApiResponse } from 'next'
 // sgMail.setApiKey(process.env.EMAIL_API_KEY)
 
 export default async (req, res) => {
-  const body = req.body
+  const { name, email, subject, message } = req.body
 
-  const msg = `
-        Name: ${body.name}\r\n
-        Email: ${body.email}\r\n
-        Subject: ${body.subject}\r\n
-        Message: ${body.message}
-    `
   const data = {
     to: 'kunconsultancy2022@gmail.com',
-    from: body.email,
-    subject: body.subject,
-    name: body.name,
-    text: body.message
+    from: email,
+    subject: subject,
+    name: name,
+    text: message
   }
 
   try {
     // await sgMail.send(data)
+    console.log(data)
     res.status(200).json({ msg: 'Email Sent successfully' })
   } catch (error) {
     console.log('error', error)
