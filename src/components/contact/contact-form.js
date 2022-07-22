@@ -10,7 +10,7 @@ function ContactForm() {
   const MailSchema = Yup.object().shape({
     name: Yup.string().required('Name is a required field!').min(3, 'Name must be at least 3 characters!'),
     email: Yup.string().email('Please enter a valid email address').required('Email is a required field!'),
-    subject: Yup.string().required('Subject is a required field!').min(15, 'Subject must be at least 3 characters!'),
+    subject: Yup.string().required('Subject is a required field!').min(5, 'Subject must be at least 3 characters!'),
     message: Yup.string().required('Message is a required field!').min(15, 'Message must be at least 10 characters!')
   })
 
@@ -32,8 +32,7 @@ function ContactForm() {
           message: message
         }
         console.log('data', data)
-
-        async data => {
+        ;async () => {
           try {
             await fetch('/api/mail', {
               method: 'POST',
@@ -98,7 +97,7 @@ function ContactForm() {
             <form method='post' onSubmit={formik.handleSubmit}>
               <div>
                 <div className='lm:flex'>
-                  <div className=' mr-[10px] ml-[10px]'>
+                  <div className=' m-[5px]'>
                     <input
                       className={classNames({
                         'w-full bg-[#c3c3c3] border-[#595959] border-opacity-70 border-b focus-visible:placeholder:text-black focus-visible:outline-0 focus-visible:border-primary p-[15px] lm:mr-[20px]': true,
@@ -113,7 +112,7 @@ function ContactForm() {
                     />
                     {formik.touched.name && formik.errors.name && <p className='text-[#f20]'>{formik.errors.name}</p>}
                   </div>
-                  <div className=' mr-[10px] ml-[10px]'>
+                  <div className=' m-[5px] max-sm:mt-[35px]'>
                     <input
                       className={classNames({
                         'w-full bg-[#c3c3c3] border-[#595959] border-opacity-70 border-b focus-visible:placeholder:text-black focus-visible:outline-0 focus-visible:border-primary p-[15px]': true,
@@ -129,7 +128,7 @@ function ContactForm() {
                   </div>
                 </div>
               </div>
-              <div className=' mr-[10px] ml-[10px]'>
+              <div className=' m-[5px]'>
                 <textarea
                   className={classNames({
                     'w-full bg-[#c3c3c3] border-[#595959] border-opacity-70 border-b focus-visible:placeholder:text-black focus-visible:outline-0 focus-visible:border-primary p-[15px] mt-[35px]': true,
@@ -137,7 +136,7 @@ function ContactForm() {
                   })}
                   placeholder='Subject'
                   id='subject'
-                  min={15}
+                  min={5}
                   rows={1}
                   {...formik.getFieldProps('subject')}
                   required
@@ -145,7 +144,7 @@ function ContactForm() {
                 {formik.touched.subject && formik.errors.subject && <p className='text-[#f20]'>{formik.errors.subject}</p>}
               </div>
 
-              <div className=' mr-[10px] ml-[10px]'>
+              <div className=' m-[5px]'>
                 <textarea
                   className={classNames({
                     'w-full bg-[#c3c3c3] border-[#595959] border-opacity-70 border-b focus-visible:placeholder:text-black focus-visible:outline-0 focus-visible:border-primary p-[15px] mt-[35px]': true,
