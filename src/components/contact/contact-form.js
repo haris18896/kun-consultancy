@@ -10,8 +10,8 @@ function ContactForm() {
   const MailSchema = Yup.object().shape({
     name: Yup.string().required('Name is a required field!').min(3, 'Name must be at least 3 characters!'),
     email: Yup.string().email('Please enter a valid email address').required('Email is a required field!'),
-    subject: Yup.string().required('Subject is a required field!').min(5, 'Subject must be at least 3 characters!'),
-    message: Yup.string().required('Message is a required field!').min(15, 'Message must be at least 10 characters!')
+    subject: Yup.string().required('Subject is a required field!').min(5, 'Subject must be at least 5 characters!'),
+    message: Yup.string().required('Message is a required field!').min(15, 'Message must be at least 15 characters!')
   })
 
   const formik = useFormik({
@@ -24,7 +24,7 @@ function ContactForm() {
     validationSchema: MailSchema,
     onSubmit: values => {
       if (isObjEmpty(formik.errors)) {
-        const { name, email, message } = values
+        const { name, email, message, subject } = values
         const data = {
           name: name,
           email: email.trim(),
@@ -32,23 +32,13 @@ function ContactForm() {
           message: message
         }
         console.log('data', data)
-        ;async () => {
-          try {
-            await fetch('/api/mail', {
-              method: 'POST',
-              headers: {
-                'Content-Type': 'application/json'
-              },
-              body: JSON.stringify(data)
-            })
-            alert('Message sent!')
-            //if success do whatever you like, i.e toast notification
-          } catch (error) {
-            // toast error message. whatever you wish
-            alert('Error sending message!')
-            console.log('error', error)
-          }
-        }
+        fetch('/api/mail', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(data)
+        })
       }
     }
   })
@@ -129,7 +119,7 @@ function ContactForm() {
                 </div>
               </div>
               <div className=' m-[5px]'>
-                <textarea
+                <input
                   className={classNames({
                     'w-full bg-[#c3c3c3] border-[#595959] border-opacity-70 border-b focus-visible:placeholder:text-black focus-visible:outline-0 focus-visible:border-primary p-[15px] mt-[35px]': true,
                     'border-[#f20] border-opacity-100': formik.touched.message && formik.errors.message
@@ -140,7 +130,7 @@ function ContactForm() {
                   rows={1}
                   {...formik.getFieldProps('subject')}
                   required
-                ></textarea>
+                ></input>
                 {formik.touched.subject && formik.errors.subject && <p className='text-[#f20]'>{formik.errors.subject}</p>}
               </div>
 
@@ -161,7 +151,9 @@ function ContactForm() {
               </div>
 
               <div className='mt-[55px]'>
-                <button className='boxed-btn text-[14px] leading-[30px]'>Send Message</button>
+                <button type='submit' className='boxed-btn text-[14px] leading-[30px]'>
+                  Send Message
+                </button>
               </div>
             </form>
           </div>
