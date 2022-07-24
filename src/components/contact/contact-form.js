@@ -1,4 +1,5 @@
 import * as Yup from 'yup'
+import { useState } from 'react'
 import Link from 'next/link'
 import classNames from 'classnames'
 
@@ -7,6 +8,8 @@ import { isObjEmpty } from '../../utils/utils'
 import { IoLocationSharp, IoCallSharp, IoMail } from 'react-icons/io5'
 
 function ContactForm() {
+  const [mail, setMail] = useState('')
+
   const MailSchema = Yup.object().shape({
     name: Yup.string().required('Name is a required field!').min(3, 'Name must be at least 3 characters!'),
     email: Yup.string().email('Please enter a valid email address').required('Email is a required field!'),
@@ -31,7 +34,6 @@ function ContactForm() {
           subject: subject,
           message: message
         }
-        console.log('data', data)
         try {
           fetch('/api/mail', {
             method: 'POST',
@@ -41,12 +43,15 @@ function ContactForm() {
             body: JSON.stringify(data)
           }).then(res => {
             if (res.status === 200) {
-              alert('Email sent successfully!')
+              setMail('Success')
+              formik.resetForm()
+            } else if (res.status === 500) {
+              setMail('Error')
             }
           })
         } catch (error) {
           if (error) {
-            alert('Error sending email')
+            setMail('Error')
           }
         }
       }
@@ -165,6 +170,14 @@ function ContactForm() {
                   Send Message
                 </button>
               </div>
+
+              {mail == 'Success' ? (
+                <p className='text-[green] mt-[15px]'>Email sent successfully!</p>
+              ) : mail == 'Error' ? (
+                <p className='text-[#ff2200] mt-[15px]'>Error sending email</p>
+              ) : (
+                ''
+              )}
             </form>
           </div>
         </div>

@@ -1,16 +1,18 @@
 /* eslint-disable import/no-anonymous-default-export */
 // import sgMail from '@sendgrid/mail'
-let nodemailer = require('nodemailer')
 // sgMail.setApiKey(process.env.EMAIL_API_KEY)
 
 export default async (req, res) => {
+  require('dotenv').config()
+  let nodemailer = require('nodemailer')
+
   const { name, email, subject, message } = req.body
   const transporter = nodemailer.createTransport({
     port: 465,
     host: 'smtp.gmail.com',
     auth: {
       user: 'hk6530739@gmail.com',
-      pass: 'ahmed01haris'
+      pass: process.env.password
     },
     secure: true
   })
