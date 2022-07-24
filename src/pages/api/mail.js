@@ -1,23 +1,35 @@
 /* eslint-disable import/no-anonymous-default-export */
-import sgMail from '@sendgrid/mail'
-import { NextApiRequest, NextApiResponse } from 'next'
-
+// import sgMail from '@sendgrid/mail'
+let nodemailer = require('nodemailer')
 // sgMail.setApiKey(process.env.EMAIL_API_KEY)
 
 export default async (req, res) => {
   const { name, email, subject, message } = req.body
+  const transporter = nodemailer.createTransport({
+    port: 465,
+    host: 'smtp.gmail.com',
+    auth: {
+      user: 'hk6530739@gmail.com',
+      pass: 'ahmed01haris'
+    },
+    secure: true
+  })
 
-  const data = {
+  const mailData = {
     to: 'kunconsultancy2022@gmail.com',
-    from: email,
-    subject: subject,
-    name: name,
-    text: message
+    from: 'hk6530739@gmail.com',
+    name: `Message From ${name}`,
+    subject: `Message From ${subject}`,
+    text: `This mail is sent by ${email}\r\n${message}`,
+    html: `<div>This mail is sent by ${email}\r\n${message}</div>`
   }
 
   try {
     // await sgMail.send(data)
-    console.log(data)
+    transporter.sendMail(mailData, function (err, info) {
+      if (err) console.log(err)
+      else console.log(info)
+    })
     res.status(200).json({ msg: 'Email Sent successfully' })
   } catch (error) {
     console.log('error', error)

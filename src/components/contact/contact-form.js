@@ -32,13 +32,23 @@ function ContactForm() {
           message: message
         }
         console.log('data', data)
-        fetch('/api/mail', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(data)
-        })
+        try {
+          fetch('/api/mail', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+          }).then(res => {
+            if (res.status === 200) {
+              alert('Email sent successfully!')
+            }
+          })
+        } catch (error) {
+          if (error) {
+            alert('Error sending email')
+          }
+        }
       }
     }
   })
