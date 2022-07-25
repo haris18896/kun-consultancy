@@ -1,5 +1,5 @@
 import * as Yup from 'yup'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import classNames from 'classnames'
 
@@ -41,13 +41,6 @@ function ContactForm() {
               'Content-Type': 'application/json'
             },
             body: JSON.stringify(data)
-          }).then(res => {
-            if (res.status === 200) {
-              setMail('Success')
-              formik.resetForm()
-            } else if (res.status === 500) {
-              setMail('Error')
-            }
           })
         } catch (error) {
           if (error) {
@@ -57,6 +50,12 @@ function ContactForm() {
       }
     }
   })
+
+  useEffect(() => {
+    return () => {
+      setMail('')
+    }
+  }, [])
 
   return (
     <div className='contact-area md:pt-[145px] pt-[45px] border-[#595959] border-opacity-30 border-b md:pb-160 pb-[60px]'>
@@ -171,13 +170,13 @@ function ContactForm() {
                 </button>
               </div>
 
-              {mail == 'Success' ? (
+              {/* {mail == 'Success' ? (
                 <p className='text-[green] mt-[15px]'>Email sent successfully!</p>
               ) : mail == 'Error' ? (
                 <p className='text-[#ff2200] mt-[15px]'>Error sending email</p>
               ) : (
                 ''
-              )}
+              )} */}
             </form>
           </div>
         </div>
