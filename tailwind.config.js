@@ -78,6 +78,7 @@ module.exports = {
       'fixed-md': { min: '768px', max: '991px' },
       'fixed-lg': { min: '992px', max: '1199px' },
       'fixed-xl': { min: '1200px', max: '1800px' },
+      'fixed-xxl': { min: '1800px', max: '2900px' },
 
       // Minimum Medium Query
       sm: '480px',

@@ -31,7 +31,7 @@ function VisaConsultancy() {
           <div className='text-left  flex flex-col-reverse'>
             <div className='lg:col-span-4 xl:mr-[140px] lg:mr-[40px] max-md:pt-[50px]'>
               <div className='service-content grid'>
-                <div className='fixed-md:grid fixed-md:grid-cols-2 fixed-xl:grid fixed-xl:grid-cols-3 gap-[25px]'>
+                <div className='fixed-md:grid fixed-md:grid-cols-2 fixed-lg:grid fixed-lg:grid-cols-3 fixed-xl:grid fixed-xl:grid-cols-3 fixed-xxl:grid fixed-xxl:grid-cols-5 gap-[25px]'>
                   <>
                     <div className='service-box'>
                       <div className='service-box-inner border-none'>

@@ -24,8 +24,8 @@ function Footer() {
                     </Link>
                   </li>
                   <li>
-                    <Link href='tel:+0084-912-3548-073'>
-                      <a className='hover:text-primary transition-all'>(+97) 152 307 3109</a>
+                    <Link href='tel:+971523073109'>
+                      <a className='hover:text-primary transition-all'>(+971) 52 307 3109</a>
                     </Link>
                   </li>
                 </ul>
@@ -58,9 +58,9 @@ function Footer() {
                   <li>
                     <Link href='/services'>Services</Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href='/service-details/careers'>Career</Link>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>

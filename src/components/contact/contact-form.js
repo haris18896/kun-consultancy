@@ -63,9 +63,9 @@ function ContactForm() {
         <div className='lg:grid lg:grid-cols-5'>
           <div className='contact-info lg:col-span-2 lg:pr-[15px]'>
             <h2 className='text-[48px] left-[58px] md:pb-[55px] pb-[35px] text-primary'>Contact</h2>
-            <h3 className='text-3xl leading-9 font-semibold text-primary'>
+            {/* <h3 className='text-3xl leading-9 font-semibold text-primary'>
               Haripur, <span className='text-[#fff]'>Pakistan</span>
-            </h3>
+            </h3> */}
             <ul className='text-[14px] leading-[27px] text-azure pt-6'>
               <li className='pb-[15px] max-w-[300px] flex flex-row'>
                 <IoLocationSharp size={20} color='#ffd700' />
