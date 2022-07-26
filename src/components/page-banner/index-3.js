@@ -6,7 +6,7 @@ function PageBannerServiceDetails() {
       <div className='container'>
         <div className='banner-content pb-[80px] relative'>
           <span className='text-[18px] leading-[29px] text-white uppercase max-w-[225px] block'>Kun Consultancy</span>
-          <h2 className='sm:text-[100px] text-[20px] sm:leading-[80px] text-white'>Services Details</h2>
+          <h4 className='sm:text-[60px] text-[24px] sm:leading-[60px] text-white'>Services Details</h4>
           <div className='info text-white hover:text-primary transition-all text-[14px] pt-[15px] uppercase block lm:hidden'>
             <Link href='mailto:info@kunconsultingservices.com'>info@kunconsultingservices.com</Link>
           </div>
