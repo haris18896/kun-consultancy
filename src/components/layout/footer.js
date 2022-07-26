@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 function Footer() {
   return (
-    <footer className='footer-area bg-[rgb(17,17,17)] md:pt-[120px] pt-[60px]'>
+    <footer className='footer-area bg-[rgb(21,37,53)] md:pt-[120px] pt-[60px]'>
       <div className='footer-top'>
         <div className='custom-container'>
           <div className='lm:grid xl:grid-cols-4 lm:grid-cols-12 xl:gap-x-[30px] gap-[30px]'>
