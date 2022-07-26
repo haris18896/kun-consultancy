@@ -5,7 +5,7 @@ function PageBanner() {
     <div className='page-banner bg-page-banner-1 flex items-end justify-start lg:h-[950px] h-[550px] bg-fixed bg-center bg-cover relative before:absolute before:bg-black before:opacity-40 before:w-full before:h-full'>
       <div className='container'>
         <div className='banner-content pb-[80px] relative'>
-          <span className='text-[18px] leading-[29px] text-white uppercase max-w-[225px] block'>Kun Consultancy</span>
+          <span className='text-[18px] leading-[29px] text-white uppercase max-w-[225px] block'>Kun Consulting Services</span>
           <h4 className='sm:text-[60px] text-[24px] sm:leading-[60px] text-white'>About Us</h4>
           <div className='info text-white hover:text-primary transition-all text-[14px] pt-[15px] uppercase block lm:hidden'>
             <Link href='mailto:info@kunconsultingservices.com'>info@kunconsultingservices.com</Link>

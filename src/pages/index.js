@@ -10,8 +10,8 @@ function HomePage(props) {
   return (
     <Fragment>
       <Head>
-        <title>Kun Consultancy</title>
-        <meta name='description' content='Kun Consultancy ' />
+        <title>Kun Consulting Services</title>
+        <meta name='description' content='Kun Consulting Services ' />
       </Head>
       <HeaderOne />
       <Hero heroItems={props.heroItems} />
