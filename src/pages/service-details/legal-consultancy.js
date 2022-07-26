@@ -35,7 +35,7 @@ function LegalConsultation() {
                 <div className='fixed-md:grid fixed-md:grid-cols-2 fixed-lg:grid fixed-lg:grid-cols-3 fixed-xl:grid fixed-xl:grid-cols-3 fixed-xxl:grid fixed-xxl:grid-cols-5 gap-[25px]'>
                   <>
                     <div className='service-box'>
-                      <div className='service-box-inner border-none'>
+                      <div className='service-box-inner2 border-none'>
                         <div className='service-list flex-col text-center'>
                           <div className='icon text-primary mb-[12px] m-auto'>
                             <RiFilePaper2Fill />
@@ -48,7 +48,7 @@ function LegalConsultation() {
                     </div>
 
                     <div className='service-box'>
-                      <div className='service-box-inner border-none'>
+                      <div className='service-box-inner2 border-none'>
                         <div className='service-list flex-col text-center'>
                           <div className='icon text-primary mb-[12px] m-auto'>
                             <RiVisaFill />
@@ -61,7 +61,7 @@ function LegalConsultation() {
                     </div>
 
                     <div className='service-box'>
-                      <div className='service-box-inner border-none'>
+                      <div className='service-box-inner2 border-none'>
                         <div className='service-list flex-col text-center'>
                           <div className='icon text-primary mb-[12px] m-auto'>
                             <GiCancel />
@@ -74,7 +74,7 @@ function LegalConsultation() {
                     </div>
 
                     <div className='service-box'>
-                      <div className='service-box-inner border-none'>
+                      <div className='service-box-inner2 border-none'>
                         <div className='service-list flex-col text-center'>
                           <div className='icon text-primary mb-[12px] m-auto'>
                             <IoBan />
@@ -87,7 +87,7 @@ function LegalConsultation() {
                     </div>
 
                     <div className='service-box'>
-                      <div className='service-box-inner border-none'>
+                      <div className='service-box-inner2 border-none'>
                         <div className='service-list flex-col text-center'>
                           <div className='icon text-primary mb-[12px] m-auto'>
                             <GiViola />

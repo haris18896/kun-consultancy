@@ -7,5 +7,5 @@ facebookIcon: 'FaFacebookF'
 googleIcon: 'FaGoogle'
 heroCategory: Kun <br /> Consultancy
 heroTitle: PAKISTAN'S MOST TRUSTED <br /> IMMIGRATION CONSULTANCY
-heroContactInfo: kun@consultancy.com
+heroContactInfo: info@kunconsultingservices.com
 ---

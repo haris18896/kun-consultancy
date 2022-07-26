@@ -83,7 +83,7 @@ function BusinessSetup() {
                   <>
                     {businessItems.map((item, index) => (
                       <div className='service-box' key={index}>
-                        <div className='service-box-inner border-none'>
+                        <div className='service-box-inner2 border-none'>
                           <div className='service-list flex-col text-center'>
                             <div className='icon text-primary mb-[12px] m-auto'>{item?.icon}</div>
                             <div className='contentServices'>

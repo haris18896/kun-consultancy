@@ -1,8 +1,6 @@
-import { useState } from 'react'
 import Image from 'next/image'
 
 function About() {
-  const [more, setMore] = useState(false)
   const subTitle = `text-[18px] leading-[32px] text-secondary uppercase text-[#c9ad1a]`
   const title = `lm:text-[42px] lm:leading-[50px] text-[32px] text-primary mb-[35px] lg:max-w-[460px]`
   const desc = `text-[16px] leading-[25px] text-[#fff] mb-[80px] lg:max-w-[490px]`
@@ -13,33 +11,13 @@ function About() {
         <div className='lg:grid lg:grid-cols-2 max-md:flex max-md:flex-col-reverse'>
           <div className='about-content max-md:pt-10'>
             <span className={subTitle}>About</span>
-            <h2 className={title}>Over 4 years leading and deeps in immigration and visit</h2>
-            <h3 className='text-[#c9ad1a] text-2xl mb-12'>
-              We know that good solution means <br /> good journey
-            </h3>
-            <p className={desc}>
-              Kun Consultancy – an influential name in the field of immigration, foreign education, spouse settlement and visit
-              since 2018. We are the top study abroad and immigration consultant in Pakistan for the last 4 years. <br />
-              <br />
-              The portfolio of 100’s settling families as immigrants to Australia, Canada, the USA, Europe,the UK and countless
-              students quenching their thirst for knowledge all across the world is the assurance of our deliverance and
-              commitment
-            </p>
+            <h2 className={title}>We know that good solution means good journey</h2>
 
-            {more && (
-              <p className={desc}>
-                We started its operations for public in Haripur,Pakistan following the concept of navigating COV-EXIT. The concept
-                of COV-EXIT is launched by HIS HIGHNESS SHEIKH MUHAMMAD BIN RASHID AL MAKTOUM, VICE PRESIDENT OF UAE AND THE RULER
-                OF DUBAI to re-shape the economy and stabilize the damage caused by the pandemic. <br />
-                <br />
-                We are a one stop solution for all kinds of Business license and consultation. the motive of KunConsultancy is to
-                provide assistance to all their customers to overcome the current situation caused by the pandemic while also
-                saving precious time and money.
-              </p>
-            )}
-            <button onClick={() => setMore(!more)} className='boxed-btn text-[18px] leading-[30px]'>
-              {!more ? 'More About Us' : 'Less About Us'}
-            </button>
+            <p className={desc}>
+               We are a one-stop solution for all kinds of Business licenses and consultations. The motive of Kun Consulting is to assist all its customers in overcoming the current situation caused by the pandemic while also saving precious time and money. We have started operations for the public in Pakistan, KSA, Qatar, and UAE. We help grow individual creative solutions for businesses and start-ups globally. We create for you a unique brand identity that makes your brand versatile & competitive.<br />
+              <br />
+              Our support team at Kun Consulting is extremely interactive with our clients to ensure we address all our clients concerns as a high priority. Moreover, we provide consistent support throughout the day and take active measures to guarantee our clients necessities are actively monitored 24/7.
+            </p>
           </div>
           <div className={aboutImage}>
             <Image

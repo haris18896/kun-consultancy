@@ -8,6 +8,7 @@ import * as SiIcons from 'react-icons/si'
 import * as MdIcons from 'react-icons/md'
 import * as FaIcons from 'react-icons/fa'
 import * as VscIcons from 'react-icons/vsc'
+import Link from 'next/link'
 
 function AllServices({ services }) {
   const router = useRouter()
@@ -49,7 +50,11 @@ function AllServices({ services }) {
                             <Icon />
                           </div>
                           <div className='contentServices'>
-                            <h3 className='title text-primary'>{service?.title}</h3>
+                            <h3 className='title text-primary'>
+                              <Link href={service?.href}>
+                                <a className='hover:underline'>{service?.title}</a>
+                              </Link>
+                            </h3>
                             <p className='desc '>{service?.content}</p>
                           </div>
                         </div>

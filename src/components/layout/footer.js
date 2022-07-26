@@ -17,7 +17,6 @@ function Footer() {
               <div className='footer-widget-item'>
                 <h2 className='title text-primary'>Contact</h2>
                 <ul className='contact-info mt-[25px]'>
-                  <li>Haripur, Hazara, Pakistan</li>
                   <li>
                     <Link href='mailto:info@kunconsultingservices.com'>
                       <a className='hover:text-primary transition-all'>info@kunconsultingservices.com</a>

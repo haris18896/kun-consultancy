@@ -58,7 +58,7 @@ function ContactForm() {
   }, [])
 
   return (
-    <div className='contact-area md:pt-[145px] pt-[45px] border-[#595959] border-opacity-30 border-b md:pb-160 pb-[60px]'>
+    <div className='contact-area md:pt-[145px] pt-[95px] border-[#595959] border-opacity-30 border-b md:pb-160 pb-[60px]'>
       <div className='container'>
         <div className='lg:grid lg:grid-cols-5'>
           <div className='contact-info lg:col-span-2 lg:pr-[15px]'>
@@ -69,7 +69,7 @@ function ContactForm() {
             <ul className='text-[14px] leading-[27px] text-azure pt-6'>
               <li className='pb-[15px] max-w-[300px] flex flex-row'>
                 <IoLocationSharp size={20} color='#ffd700' />
-                <span className='ml-[5px]'>Karachi Pakistan</span>
+                <span className='ml-[5px]'>Pakistan</span>
               </li>
               <li className='pb-[15px] flex flex-row'>
                 <IoCallSharp size={20} color='#ffd700' />
@@ -91,7 +91,7 @@ function ContactForm() {
               <li className='flex flex-row'>
                 <IoMail size={20} color='#ffd700' />
                 <Link href='mailto:contact@nordicstudio.co'>
-                  <a className='ml-[5px]'>kun@consultancy.com</a>
+                  <a className='ml-[5px]'>info@kunconsultingservices.com</a>
                 </Link>
               </li>
             </ul>
