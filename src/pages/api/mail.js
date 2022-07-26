@@ -24,9 +24,8 @@ export default async (req, res) => {
   })
 
   const mailData = {
-    from: 'info@kunconsultingservices.com',
-    to: 'hk6530739@gmail.com',
-    // to: "info@kunconsultingservices.com"
+    from: 'hk6530739@gmail.com',
+    to: 'info@kunconsultingservices.com',
     name: `Message From ${name}`,
     subject: `Message From ${subject}`,
     text: `This mail is sent by ${email}\r\n${message}`,

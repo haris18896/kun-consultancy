@@ -19,7 +19,7 @@ function Footer() {
                 <ul className='contact-info mt-[25px]'>
                   <li>Haripur, Hazara, Pakistan</li>
                   <li>
-                    <Link href='mailto:hello@Rusticstudio.co'>
+                    <Link href='mailto:info@kunconsultingservices.com'>
                       <a className='hover:text-primary transition-all'>info@kunconsultingservices.com</a>
                     </Link>
                   </li>
