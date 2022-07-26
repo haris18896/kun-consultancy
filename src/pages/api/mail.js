@@ -1,45 +1,28 @@
 /* eslint-disable import/no-anonymous-default-export */
 
-let nodemailer = require('nodemailer')
+import sgMail from '@sendgrid/mail'
 const dotenv = require('dotenv')
 dotenv.config()
+sgMail.setApiKey(process.env.SENDGRID_API_KEY)
 
 export default async (req, res) => {
   const { name, email, subject, message } = req.body
+  console.log(process.env.SENDGRID_API_KEY)
 
-  let transporter = nodemailer.createTransport({
-    host: 'smtp.gmail.com',
-    port: 465,
-    secure: true,
-    service: 'gmail',
-    auth: {
-      type: 'OAUTH2',
-      user: process.env.GMAIL_USERNAME,
-      clientId: process.env.OAUTH_CLIENT_ID,
-      clientSecret: process.env.OAUTH_CLIENT_SECRET,
-      refreshToken: process.env.OAUTH_REFRESH_TOKEN,
-      accessToken: process.env.OAUTH_ACCESS_TOKEN,
-      expires: 3599
-    }
-  })
-
-  const mailData = {
-    from: 'hk6530739@gmail.com',
+  const Data = {
+    from: email,
     to: 'info@kunconsultingservices.com',
     name: `Message From ${name}`,
-    subject: `Message From ${subject}`,
-    text: `This mail is sent by ${email}\r\n${message}`,
+    subject: subject,
+    text: message,
     html: `<div>This mail is sent by ${email}\r\n${message}</div>`
   }
 
   try {
-    transporter.sendMail(mailData, function (err, info) {
-      if (err) console.log('error in nodemailer:-', err)
-      else console.log('info', info)
-      if (!err) res.status(200).json({ msg: 'Email Sent successfully' })
+    await sgMail.send(Data).then(() => {
+      res.status(200).json({ message: `Email has been sent` })
     })
   } catch (error) {
-    console.log('error 500:- ', error)
-    res.status(500).json({ msg: 'Error sending email' })
+    res.status(500).json({ error: 'Error sending email' })
   }
 }

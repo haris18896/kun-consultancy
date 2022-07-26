@@ -41,6 +41,11 @@ function ContactForm() {
               'Content-Type': 'application/json'
             },
             body: JSON.stringify(data)
+          }).then(res => {
+            if (res.status === 200) {
+              setMail('Success')
+              formik.resetForm()
+            }
           })
         } catch (error) {
           if (error) {
@@ -170,13 +175,13 @@ function ContactForm() {
                 </button>
               </div>
 
-              {/* {mail == 'Success' ? (
+              {mail == 'Success' ? (
                 <p className='text-[green] mt-[15px]'>Email sent successfully!</p>
               ) : mail == 'Error' ? (
                 <p className='text-[#ff2200] mt-[15px]'>Error sending email</p>
               ) : (
                 ''
-              )} */}
+              )}
             </form>
           </div>
         </div>
