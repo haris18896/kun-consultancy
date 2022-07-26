@@ -23,7 +23,6 @@ function HomePage(props) {
 
 export function getStaticProps() {
   const heroItems = getAllItems('heros')
-  const posts = getAllItems('posts')
   const services = getAllItems('services')
 
   return {
