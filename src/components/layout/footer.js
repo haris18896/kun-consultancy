@@ -92,16 +92,6 @@ function Footer() {
                       <a>Instagram</a>
                     </Link>
                   </li>
-                  <li>
-                    <Link href='https://tumblr.com/'>
-                      <a>Tumblr</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href='https://pinterest.com/'>
-                      <a>Pinterest</a>
-                    </Link>
-                  </li>
                 </ul>
               </div>
             </div>

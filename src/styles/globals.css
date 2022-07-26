@@ -1,8 +1,4 @@
 /*-----------------------------------------------------------------------------------
-    Template Name: Rustic - React Business Template
-    Version: 1.0
------------------------------------------------------------------------------------
-    
     INDEX
     ===================
 	
@@ -10,13 +6,7 @@
     - header
     - hero
     - services
-    - project
-    - post
-    - pricing tab
-    - testimonial
     - footer
-    - team
-
 -----------------------------------------------------------------------------------*/
 /*----------------------------------------*/
 /*  - default
@@ -202,119 +192,6 @@ textarea:focus-visible {
 }
 
 /*----------------------------------------*/
-/*  - project
-/*----------------------------------------*/
-.project-area .swiper-container {
-    @apply md:pb-[100px] pb-[75px];
-}
-.project-area .swiper-pagination {
-    @apply !bottom-0;
-}
-.project-area .swiper-pagination .swiper-pagination-bullet {
-    @apply !m-[0_20px_0_0] last:!mr-0 w-[10px] h-[10px] leading-[10px];
-}
-.project-area .swiper-pagination .swiper-pagination-bullet-active {
-    @apply bg-primary;
-}
-
-.project-item {
-    @apply relative before:absolute before:bg-primary before:w-0 before:h-full before:top-0 before:left-0 before:z-[1] before:pointer-events-none transition before:duration-500 hover:before:w-full;
-}
-.project-content {
-    @apply absolute left-[40px] bottom-[40px] z-[2];
-}
-.project-category {
-    @apply text-white text-[14px] leading-6 uppercase block mb-[15px] transition duration-500 group-hover:text-black;
-}
-.project-title {
-    @apply text-white text-[36px] leading-[43px] transition duration-500 group-hover:text-black;
-}
-/*----------------------------------------*/
-/*  - post
-/*----------------------------------------*/
-
-.post-share-tags {
-    @apply flex;
-}
-.post-share-tags li a {
-    @apply relative block mr-1 border p-[10px_20px] border-[#595959] border-opacity-50 text-[15px] text-[#595959] transition-all hover:bg-primary hover:border-primary hover:text-[#111111];
-}
-
-/*----------------------------------------*/
-/*  - pricing tab
-/*----------------------------------------*/
-.pricing-tab li {
-    @apply first:mx-5;
-}
-.pricing-tab li span {
-    @apply transition-all hover:text-black;
-}
-.pricing-tab li.active span {
-    @apply text-black;
-}
-.pricing-tab li.monthly .round {
-    @apply relative ml-5 before:transition-all pl-[46px] bg-[#669900] w-[46px] h-[24px] rounded-[50px] pointer-events-none before:absolute before:top-1/2 before:left-[2px] before:translate-y-[-50%] before:translate-x-[24px] before:bg-[#f6f8f4] before:w-[16px] before:h-[16px] before:rounded-[50px];
-}
-.pricing-tab li.monthly.active .round {
-    @apply before:translate-x-0;
-}
-.pricing-content .common {
-    @apply hidden;
-}
-.pricing-content .common.active {
-    @apply block;
-}
-.pricing-item {
-    @apply border-t border-l border-b last:border-r max-md:border-r border-[#e6e9ec] p-[35px_30px_45px_45px] fixed-lg:p-[35px_18px_45px_18px];
-}
-.pricing-item span {
-    @apply block;
-}
-.pricing-item .title {
-    @apply text-[#999999] text-[14px] leading-6 uppercase mb-[15px];
-}
-.pricing-item .price {
-    @apply text-[36px] leading-[47px] text-[#669900] mb-[15px];
-}
-.pricing-item .desc {
-    @apply text-secondary text-[14px] leading-[25px] pb-[25px] mb-[25px] border-dashed border-b;
-}
-.pricing-item .price-list li {
-    @apply flex items-center mb-[15px] last:mb-0;
-}
-.pricing-item .price-list li {
-    @apply flex items-center mb-[15px] last:mb-0;
-}
-.pricing-item .price-list li .icon {
-    @apply text-[#669900] mr-[10px];
-}
-
-/*----------------------------------------*/
-/*  - testimonial
-/*----------------------------------------*/
-.testimonial-area {
-    @apply md:pt-[155px] pt-[55px] md:mt-[155px] mt-[55px];
-}
-.testimonial-title {
-    @apply lm:text-[42px] text-primary text-[28px] lm:leading-[50px];
-}
-.testimonial-block {
-    @apply bg-white relative;
-}
-.testimonial-block .inner-box {
-    @apply relative pt-[25px] pb-[35px] px-[25px];
-}
-.testimonial-author {
-    @apply font-heebo font-medium text-[18px] text-[#263a4f] mb-[15px];
-}
-.testimonial-author .occupation {
-    @apply font-heebo font-normal text-[14px] text-[#30373E] ml-1;
-}
-.testimonial-feedback {
-    @apply text-[14px] leading-[25px] text-[#30373E];
-}
-
-/*----------------------------------------*/
 /*  - footer
 /*----------------------------------------*/
 .footer-widget-item .title {
@@ -348,16 +225,3 @@ textarea:focus-visible {
     @apply text-[14px] leading-6 uppercase transition-all text-[#fff] hover:text-sky;
 }
 
-/*----------------------------------------*/
-/*  - team
-/*----------------------------------------*/
-.team-title {
-    @apply text-[24px] leading-[31px] transition-all hover:text-[#caac6b];
-}
-.team-occupation {
-    @apply text-[14px] leading-6 text-secondary;
-}
-
-.page-parallax img {
-    @apply bg-fixed h-[250px];
-}
