@@ -20,7 +20,7 @@ function Footer() {
                   <li>Haripur, Hazara, Pakistan</li>
                   <li>
                     <Link href='mailto:hello@Rusticstudio.co'>
-                      <a className='hover:text-primary transition-all'>kunconsultancy2022@gmail.com</a>
+                      <a className='hover:text-primary transition-all'>info@kunconsultingservices.com</a>
                     </Link>
                   </li>
                   <li>
