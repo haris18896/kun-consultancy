@@ -1,9 +1,10 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import * as AiIcons from 'react-icons/ai'
+import { useRouter } from 'next/router'
 import * as GiIcons from 'react-icons/gi'
 import * as GrIcons from 'react-icons/gr'
-import { useRouter } from 'next/router'
+import * as SiIcons from 'react-icons/si'
+
 function Services({ services }) {
   const router = useRouter()
   return (
@@ -18,11 +19,12 @@ function Services({ services }) {
             <div className='service-content xl:w-[490px] w-full ml-auto'>
               <span className='sub-title text-[#c9ad1a] text-[18px] leading-[32px] uppercase mb-[25px] block'>Services</span>
               <h2 className='title text-primary lm:text-[42px] lm:leading-[50px] text-[32px] mb-[60px]'>
-                Best solutions for <br /> your dream.
+                BEST SOLUTIONS FOR <br /> YOUR DREAMS.
               </h2>
               <div className='fixed-md:grid fixed-md:grid-cols-2 grid max-md:gap-[25px]'>
                 {services.slice(0, 3)?.map(service => {
-                  const Icon = AiIcons[service?.icon] || GiIcons[service?.icon] || GrIcons[service?.icon]
+                  const Icon = SiIcons[service?.icon] || GrIcons[service?.icon] || GiIcons[service?.icon]
+
                   return (
                     <div
                       className='service-box'

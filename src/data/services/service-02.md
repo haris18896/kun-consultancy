@@ -1,8 +1,7 @@
 ---
-title: "Legal Consultation (UAE)"
-icon: "GiPapers"
-href: "/service-details/legal-consultancy"
+title: 'Visa Services (UAE)'
+icon: 'GrVisa'
+href: "/service-details/visa-services"
 ---
 
-Get a specialist to help you with ligation
-
+Get a professional visa services on all domains of visas

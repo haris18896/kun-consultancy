@@ -1,8 +1,7 @@
 ---
-title: 'Freelance Visa'
-icon: 'SiFreelancer'
-href: "/service-details/freelance-visa"
+title: "Accommodation (UAE)"
+icon: "AiOutlineHome"
+href: "/service-details/accommodation"
 ---
 
-Get help with freelance visa processing in the United Arab Emirates, Kingdom of Saudi Arabia, and 
-Qatar
+Best Accommodation in United Arab Emirates
