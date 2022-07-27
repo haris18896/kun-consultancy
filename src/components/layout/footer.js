@@ -18,14 +18,14 @@ function Footer() {
                 <h2 className='title text-primary'>Contact</h2>
                 <ul className='contact-info mt-[25px]'>
                   <li>
-                    <Link href='mailto:info@kunconsultingservices.com'>
-                      <a className='hover:text-primary transition-all'>info@kunconsultingservices.com</a>
-                    </Link>
+                    <a href='mailto:info@kunconsultingservices.com' className='hover:text-primary transition-all'>
+                      info@kunconsultingservices.com
+                    </a>
                   </li>
                   <li>
-                    <Link href='tel:+971523073109'>
-                      <a className='hover:text-primary transition-all'>(+971) 52 307 3109</a>
-                    </Link>
+                    <a href='tel:+971523073109' className='hover:text-primary transition-all'>
+                      (+971) 52 307 3109
+                    </a>
                   </li>
                 </ul>
               </div>
