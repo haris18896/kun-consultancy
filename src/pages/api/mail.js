@@ -18,11 +18,14 @@ export default async (req, res) => {
     html: `<div>This mail is sent by ${email}\r\n${message}</div>`,
   }
 
+  console.log('before try catch')
+
   try {
-    await sgMail.send(Data).then(() => {
-      res.status(200).json({ message: `Email has been sent` })
-    })
+    await sgMail.send(Data)
+    console.log('is it here')
+    res.status(200).json({ message: `Email has been sent` })
   } catch (error) {
+    console.log('error in mail: ', error)
     res.status(500).json({ error: 'Error sending email' })
   }
 }
