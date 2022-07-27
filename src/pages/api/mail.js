@@ -18,8 +18,6 @@ export default async (req, res) => {
     html: `<div>This mail is sent by ${email}\r\n${message}</div>`,
   }
 
-  console.log(process.env.SENDGRID_API_KEY)
-
   try {
     await sgMail.send(Data).then(() => {
       res.status(200).json({ message: `Email has been sent` })

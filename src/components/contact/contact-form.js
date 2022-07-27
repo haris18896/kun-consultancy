@@ -14,7 +14,7 @@ function ContactForm() {
     name: Yup.string().required('Name is a required field!').min(3, 'Name must be at least 3 characters!'),
     email: Yup.string().email('Please enter a valid email address').required('Email is a required field!'),
     subject: Yup.string().required('Subject is a required field!').min(5, 'Subject must be at least 5 characters!'),
-    message: Yup.string().required('Message is a required field!').min(15, 'Message must be at least 15 characters!')
+    message: Yup.string().required('Message is a required field!').min(15, 'Message must be at least 15 characters!'),
   })
 
   const formik = useFormik({
@@ -22,7 +22,7 @@ function ContactForm() {
       name: '',
       email: '',
       subject: '',
-      message: ''
+      message: '',
     },
     validationSchema: MailSchema,
     onSubmit: values => {
@@ -32,15 +32,15 @@ function ContactForm() {
           name: name,
           email: email.trim(),
           subject: subject,
-          message: message
+          message: message,
         }
         try {
           fetch('/api/mail', {
             method: 'POST',
             headers: {
-              'Content-Type': 'application/json'
+              'Content-Type': 'application/json',
             },
-            body: JSON.stringify(data)
+            body: JSON.stringify(data),
           }).then(res => {
             if (res.status === 200) {
               setMail('Success')
@@ -53,7 +53,7 @@ function ContactForm() {
           }
         }
       }
-    }
+    },
   })
 
   useEffect(() => {
@@ -110,7 +110,7 @@ function ContactForm() {
                     <input
                       className={classNames({
                         'w-full bg-[#c3c3c3] border-[#595959] border-opacity-70 border-b focus-visible:placeholder:text-black focus-visible:outline-0 focus-visible:border-primary p-[15px] lm:mr-[20px]': true,
-                        'border-[#f20] border-opacity-100 ': formik.touched.name && formik.errors.name
+                        'border-[#f20] border-opacity-100 ': formik.touched.name && formik.errors.name,
                       })}
                       placeholder='Name'
                       type='text'
@@ -125,7 +125,7 @@ function ContactForm() {
                     <input
                       className={classNames({
                         'w-full bg-[#c3c3c3] border-[#595959] border-opacity-70 border-b focus-visible:placeholder:text-black focus-visible:outline-0 focus-visible:border-primary p-[15px]': true,
-                        'border-[#f20] border-opacity-100': formik.touched.email && formik.errors.email
+                        'border-[#f20] border-opacity-100': formik.touched.email && formik.errors.email,
                       })}
                       placeholder='Email'
                       type='email'
@@ -141,7 +141,7 @@ function ContactForm() {
                 <input
                   className={classNames({
                     'w-full bg-[#c3c3c3] border-[#595959] border-opacity-70 border-b focus-visible:placeholder:text-black focus-visible:outline-0 focus-visible:border-primary p-[15px] mt-[35px]': true,
-                    'border-[#f20] border-opacity-100': formik.touched.message && formik.errors.message
+                    'border-[#f20] border-opacity-100': formik.touched.message && formik.errors.message,
                   })}
                   placeholder='Subject'
                   id='subject'
@@ -157,7 +157,7 @@ function ContactForm() {
                 <textarea
                   className={classNames({
                     'w-full bg-[#c3c3c3] border-[#595959] border-opacity-70 border-b focus-visible:placeholder:text-black focus-visible:outline-0 focus-visible:border-primary p-[15px] mt-[35px]': true,
-                    'border-[#f20] border-opacity-100': formik.touched.message && formik.errors.message
+                    'border-[#f20] border-opacity-100': formik.touched.message && formik.errors.message,
                   })}
                   placeholder='Here goes your message'
                   id='message'
