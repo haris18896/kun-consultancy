@@ -11,11 +11,11 @@ export default async (req, res) => {
   const Data = {
     from: email,
     // to: 'info@kunconsultingservices.com',
-    to: 'haris18896@gmail.com',
+    to: 'xhadow43@gmail.com',
     name: name,
     subject: subject,
     text: message,
-    html: `<div>This mail is sent by ${email}\r\n${message}</div>`
+    html: `<div>This mail is sent by ${email}\r\n${message}</div>`,
   }
 
   console.log(process.env.SENDGRID_API_KEY)
